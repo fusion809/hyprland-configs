@@ -44,8 +44,9 @@
          "format-icons": {
              "1": "",
              "2": "",
-             "3": "",
-             "4": "",
+             "3": "/",
+	         "4": "/",
+	         "5": "/",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -59,11 +60,12 @@
 		"menu-actions": {
 			"wiki": "xdg-open https://wiki.archlinux.org",
 			"aur": "xdg-open https://aur.archlinux.org",
-			"hyprland.conf": "xdg-open ~/.config/hypr/hyprland.conf",
-			"kitty.conf": "xdg-open ~/.config/kitty/kitty.conf",
-			"config.jsonc": "xdg-open ~/.config/waybar/config.jsonc",
-			"arch_menu.xml": "xdg-open ~/.config/waybar/arch_menu.xml",
-			"power_menu.xml": "xdg-open ~/.config/waybar/power_menu.xml"
+			"configs": "code ~/hyprland-configs",
+			"hyprland.conf": "gvim ~/.config/hypr/hyprland.conf",
+			"kitty.conf": "gvim ~/.config/kitty/kitty.conf",
+			"config.jsonc": "gvim ~/.config/waybar/config.jsonc",
+			"arch_menu.xml": "gvim ~/.config/waybar/arch_menu.xml",
+			"power_menu.xml": "gvim ~/.config/waybar/power_menu.xml"
 		}
     },
     "keyboard-state": {
