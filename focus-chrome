@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Find the workspace where kitty is located
+ws=$(hyprctl clients -j | jq -r '.[] | select(.class=="google-chrome") | .workspace.id' | tail -n 1)
+
+if [ -n "$ws" ]; then
+    # If found, switch to it
+    hyprctl dispatch workspace "$ws"
+fi
