@@ -124,7 +124,7 @@ window#waybar.hidden {
 }
 
 #memory {
-  background-color: #ffaaff;
+  background-color: #ffffaa;
 }
 
 #cpu {
@@ -166,7 +166,7 @@ window#waybar.hidden {
 }
 
 #network {
-  background-color: #94e2d5;
+  background-color: #a9399a;
   padding-right: 4px;
 }
 
