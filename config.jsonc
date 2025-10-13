@@ -18,8 +18,9 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+      // "mpd",
+      //"idle_inhibitor",
+	"custom/bluetooth-connect",
         "pulseaudio",
         "power-profiles-daemon",
         "cpu",
@@ -66,9 +67,17 @@
 			"hyprland.conf": "gvim ~/.config/hypr/hyprland.conf",
 			"kitty.conf": "gvim ~/.config/kitty/kitty.conf",
 			"config.jsonc": "gvim ~/.config/waybar/config.jsonc",
+			"style.css": "gvim ~/.config/waybar/style.css",
 			"arch_menu.xml": "gvim ~/.config/waybar/arch_menu.xml",
 			"power_menu.xml": "gvim ~/.config/waybar/power_menu.xml"
 		}
+    },
+    "custom/bluetooth-connect": {
+      "exec": "/home/fusion809/.local/bin/bluetooth-connect",
+      "exec_if": "bluetoothctl show",
+      "format": " ",
+      "on-click": "bluetooth-connect",
+      "tooltip": "Connect to Bluetooth device"
     },
     "keyboard-state": {
         "numlock": true,

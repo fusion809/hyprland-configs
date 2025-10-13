@@ -32,6 +32,11 @@
         </object>
 	</child>
 	<child>
+        <object class="GtkMenuItem" id="style.css">
+			<property name="label">Edit style.css</property>
+        </object>
+	</child>
+	<child>
         <object class="GtkMenuItem" id="arch_menu.xml">
 			<property name="label">Edit arch_menu.xml</property>
         </object>
