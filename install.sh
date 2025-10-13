@@ -10,7 +10,7 @@ if ! [[ -d $HOME/.local/bin ]]; then
 fi
 ln -sf $PWD/bluetooth-connect ~/.local/bin/
 ln -sf $PWD/focus-chrome ~/.local/bin/
-ln -sf $PWD/focus-kitty ~/.local/bin/
+ln -sf $PWD/focus-terminal ~/.local/bin/
 ln -sf $PWD/focus-nautilus ~/.local/bin/
 ln -sf $PWD/runescape ~/.local/bin/
 ln -sf $PWD/wallpaper ~/.local/bin/
@@ -29,5 +29,9 @@ if ! [[ -d $HOME/.config/kitty ]]; then
 	mkdir -p $HOME/.config/kitty
 fi
 ln -sf $PWD/kitty.conf ~/.config/kitty/
+if ! [[ -d $HOME/.config/alacritty ]]; then
+	mkdir -p $HOME/.config/alacritty
+fi
+ln -sf $PWD/alacritty.conf ~/.config/alacritty/
 popd
-yay -S kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi hyprpaper gvim-gtk2 wttrbar --noconfirm --needed
+yay -S alacritty hyprland waybar bluetoothctl nautilus google-chrome steam rofi hyprpaper gvim-gtk2 wttrbar --noconfirm --needed

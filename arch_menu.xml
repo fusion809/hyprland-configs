@@ -27,6 +27,11 @@
         </object>
 	</child>
 	<child>
+        <object class="GtkMenuItem" id="alacritty.toml">
+			<property name="label">Edit alacritty.toml</property>
+        </object>
+	</child>
+	<child>
         <object class="GtkMenuItem" id="config.jsonc">
 			<property name="label">Edit config.jsonc</property>
         </object>
