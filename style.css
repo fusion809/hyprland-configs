@@ -79,10 +79,27 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
-#memory {
-  background-color: #fab387;
+#memory, #cpu {
+  border-radius: 4px;
+  margin: 6px 3px;
+  padding: 6px 12px;
+  color: #000000;
 }
 
+#memory {
+  background-color: #ffaaff;
+}
+
+#cpu {
+  background-color: #aaffff;
+}
+#pulseaudio {
+  border-radius: 4px;
+  margin: 6px 3px;
+  padding: 6px 12px;
+  background-color: #ffccff;
+  color: #000000;
+}
 #battery {
   background-color: #f38ba8;
 }
@@ -114,7 +131,7 @@ window#waybar.hidden {
 
 #clock {
   font-family: JetBrainsMono Nerd Font;
-  background-color: #cba6f7;
+  background-color: #aaaaff;
 }
 
 #custom-power {
