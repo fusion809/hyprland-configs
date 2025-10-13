@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Find the workspace where kitty is located
-ws=$(hyprctl clients -j | jq -r '.[] | select(.class=="nautilus") | .workspace.id' | tail -n 1)
+ws=$(hyprctl clients -j | jq -r '.[] | select(.class=="org.gnome.Nautilus") | .workspace.id' | tail -n 1)
 
 if [ -n "$ws" ]; then
     # If found, switch to it
