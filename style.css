@@ -108,6 +108,7 @@ window#waybar.hidden {
 }
 
 #custom-weather {
+	color: white;
 	background-color: #a900a9;
 }
 #memory, #cpu {
