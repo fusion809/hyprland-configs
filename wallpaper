@@ -2,11 +2,47 @@
 if ! `pgrep -x "hyprpaper" &> /dev/null`; then
 	hyprpaper &
 fi
-WALLPAPER_DIR="/usr/share/backgrounds"
-CURRENT_WALL=$(hyprctl hyprpaper listloaded)
+# Cycles through wallpapers from multiple directories for Hyprpaper
 
-# Get a random wallpaper that is not the current one
-WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
+# Directories to search
+DIRS=(
+    "$HOME/Pictures/Wallpapers"
+    "/usr/share/backgrounds"
+    "/usr/share/wallpapers"
+)
 
-# Apply the selected wallpaper
-hyprctl hyprpaper reload ,"$WALLPAPER"
+# Collect all image paths (jpg, png, jpeg)
+WALLS=()
+for d in "${DIRS[@]}"; do
+    if [[ -d "$d" ]]; then
+        while IFS= read -r -d '' file; do
+            WALLS+=("$file")
+        done < <(find "$d" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 2>/dev/null)
+    fi
+done
+
+# Exit if no wallpapers found
+if [[ ${#WALLS[@]} -eq 0 ]]; then
+    notify-send "Wallcycle" "No wallpapers found in configured directories."
+    exit 1
+fi
+
+# File to remember last wallpaper
+STATE_FILE="$HOME/.cache/hyprpaper-wallstate"
+
+# Get index of next wallpaper
+if [[ -f "$STATE_FILE" ]]; then
+    LAST_INDEX=$(<"$STATE_FILE")
+else
+    LAST_INDEX=-1
+fi
+
+NEXT_INDEX=$(( (LAST_INDEX + 1) % ${#WALLS[@]} ))
+echo "$NEXT_INDEX" > "$STATE_FILE"
+
+WALL="${WALLS[$NEXT_INDEX]}"
+
+# Apply wallpaper
+hyprctl hyprpaper preload "$WALL"
+sleep 0.2   # small delay so preload completes
+hyprctl hyprpaper wallpaper ",$WALL"

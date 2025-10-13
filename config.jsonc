@@ -163,8 +163,8 @@
     },
     "clock": {
         "timezone": "Australia/Brisbane",
-        "tooltip-format": "<big>{:%r, %a %d %b %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%r, %a %d %b %Y}",
+        "tooltip-format": "<big>{:%r %a %d/%m/%y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%r %a %d/%m/%y}",
 	"interval": 1
     },
     "cpu": {
