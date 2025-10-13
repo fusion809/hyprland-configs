@@ -135,6 +135,13 @@ window#waybar.hidden {
 	background-color: #004444;
 	color: #ffffff;
 }
+#custom-wallpaper {
+  border-radius: 4px;
+  margin: 6px 1px;
+  padding: 3px 6px;
+  background-color: #ff9999;
+  color: #000000;
+}
 #pulseaudio {
   border-radius: 4px;
   margin: 6px 1px;
