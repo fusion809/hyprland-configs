@@ -124,7 +124,7 @@ window#waybar.hidden {
 }
 
 #memory {
-  background-color: #ffffaa;
+  background-color: #ffff44;
 }
 
 #cpu {
@@ -172,11 +172,11 @@ window#waybar.hidden {
 
 #clock {
   font-family: JetBrainsMono Nerd Font;
-  background-color: #aaaaff;
+  background-color: #8888ff;
 }
 
 #custom-power {
-  background-color: #f2cdcd;
+  background-color: #ffdddd;
 }
 
 

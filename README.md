@@ -7,3 +7,4 @@ This repository contains my Hyprland configuration files.
 
 ## Installation
 To install these scripts, run the install.sh script. It merely gets the repo and sets up appropriate symlinks. 
+

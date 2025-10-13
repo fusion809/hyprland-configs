@@ -108,14 +108,14 @@
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "hyprland/scratchpad": {
+    /*"hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": ["", ""],
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
-    },
-    "mpd": {
+    },*/
+    /*"mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
@@ -140,7 +140,7 @@
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
-    },
+    },*/
     "disk": {
     	"format": "/ {used}/{total}",
     	"path": "/", // Or the path to the desired mount point, e.g., "/home"
@@ -174,14 +174,14 @@
     "memory": {
         "format": "{}% "
     },
-    "temperature": {
+    /*"temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
-    },
+    },*/
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
@@ -235,7 +235,7 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
+    /*"custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
         "max-length": 40,
@@ -246,7 +246,7 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
+    },*/
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,

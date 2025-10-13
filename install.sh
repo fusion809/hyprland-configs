@@ -30,3 +30,4 @@ if ! [[ -d $HOME/.config/kitty ]]; then
 fi
 ln -sf $PWD/kitty.conf ~/.config/kitty/
 popd
+yay -S kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi hyprpaper gvim-gtk2 wttrbar --noconfirm --needed
