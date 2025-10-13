@@ -23,7 +23,7 @@
       //"idle_inhibitor",
 	"custom/bluetooth-connect",
         "pulseaudio",
-        "power-profiles-daemon",
+	"disk",
         "cpu",
         "memory",
         "temperature",
@@ -134,6 +134,11 @@
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "disk": {
+    	"format": "/ {used}/{total}",
+    	"path": "/", // Or the path to the desired mount point, e.g., "/home"
+    	"interval": 30
     },
     "idle_inhibitor": {
         "format": "{icon}",

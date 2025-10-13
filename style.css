@@ -29,7 +29,7 @@ window#waybar.hidden {
   box-shadow: inset 0 -3px transparent;
   /* Use box-shadow instead of border so the text isn't offset */
   padding: 4px 8px;
-  margin: 4px 4px;
+  margin: 4px 1px;
   border-radius: 4px;
   background-color: #1e1e2e;
   color: #cdd6f4;
@@ -57,16 +57,22 @@ window#waybar.hidden {
 #backlight,
 #wireplumber,
 #network,
+#disk,
 #clock {
   border-radius: 4px;
-  margin: 6px 3px;
+  margin: 6px 1px;
   padding: 6px 12px;
   background-color: #1e1e2e;
   color: #181825;
 }
+
+#disk {
+  background-color: #a5f55f;
+  color: black;
+}
 #tray {
   border-radius: 4px;
-  margin: 6px 3px;
+  margin: 6px 1px;
   padding: 6px 12px;
   background-color: #994444;
   color: #ffffff;
@@ -87,18 +93,18 @@ window#waybar.hidden {
 
 #memory, #cpu, #window {
   border-radius: 4px;
-  margin: 6px 3px;
+  margin: 6px 1px;
   padding: 6px 12px;
 }
 
 #custom-archicon, #custom-bluetooth-connect, #custom-weather {
 	border-radius: 4px;
-	margin: 6px 3px;
+	margin: 6px 1px;
 	padding: 6px 6px;
 }
 
 #custom-bluetooth-connect {
-	background-color: #a5f55f;
+	background-color: #aaf9f9;
 	color: #0000ff;
 }
 
@@ -128,10 +134,10 @@ window#waybar.hidden {
 }
 #pulseaudio {
   border-radius: 4px;
-  margin: 6px 3px;
+  margin: 6px 1px;
   padding: 6px 12px;
-  background-color: #ffccff;
-  color: #000000;
+  background-color: #3f11a9;
+  color: #f0f0f0;
 }
 #battery {
   background-color: #f38ba8;
