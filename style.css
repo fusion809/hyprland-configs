@@ -57,13 +57,19 @@ window#waybar.hidden {
 #backlight,
 #wireplumber,
 #network,
-#clock,
-#tray {
+#clock {
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
   background-color: #1e1e2e;
   color: #181825;
+}
+#tray {
+  border-radius: 4px;
+  margin: 6px 3px;
+  padding: 6px 12px;
+  background-color: #aa5555;
+  color: #000000;
 }
 
 #custom-power {
@@ -85,15 +91,15 @@ window#waybar.hidden {
   padding: 6px 12px;
 }
 
-#custom-archicon, #custom-bluetooth-connect {
-	border-radius: 2px;
-	margin: 3px 1.5px;
-	padding: 3px 6px;
+#custom-archicon, #custom-bluetooth-connect, #custom-weather {
+	border-radius: 4px;
+	margin: 6px 3px;
+	padding: 6px 6px;
 }
 
 #custom-bluetooth-connect {
-	/*background-color: white;*/
-	color: #aaaaff;
+	background-color: #f9e99e;
+	color: #0000ff;
 }
 
 #custom-archicon {
@@ -101,6 +107,9 @@ window#waybar.hidden {
 	color: #0000ff;
 }
 
+#custom-weather {
+	background-color: #a900a9;
+}
 #memory, #cpu {
   color: #000000;
 }
@@ -172,3 +181,4 @@ tooltip label {
   padding: 5px;
   background-color: #131822;
 }
+

@@ -67,7 +67,7 @@
          }
     },
     "custom/archicon": {
-	"format": "  ",
+	"format": "",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/arch_menu.xml", // Menu file in resources folder
@@ -86,7 +86,7 @@
     "custom/bluetooth-connect": {
       "exec": "/home/fusion809/.local/bin/bluetooth-connect",
       "exec_if": "bluetoothctl show",
-      "format": " ",
+      "format": "",
       "on-click": "bluetooth-connect",
       "tooltip": "Connect to Bluetooth device"
     },
