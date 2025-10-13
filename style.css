@@ -133,6 +133,7 @@ window#waybar.hidden {
 
 #window {
 	background-color: #004444;
+	color: #ffffff;
 }
 #pulseaudio {
   border-radius: 4px;
