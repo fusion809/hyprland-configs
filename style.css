@@ -68,8 +68,8 @@ window#waybar.hidden {
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
-  background-color: #aa5555;
-  color: #000000;
+  background-color: #994444;
+  color: #ffffff;
 }
 
 #custom-power {
@@ -98,7 +98,7 @@ window#waybar.hidden {
 }
 
 #custom-bluetooth-connect {
-	background-color: #f9e99e;
+	background-color: #a5f55f;
 	color: #0000ff;
 }
 
