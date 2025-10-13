@@ -12,7 +12,8 @@
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
-        "custom/media"
+        "custom/media",
+	"custom/weather"
     ],
     "modules-center": [
         "hyprland/window"
@@ -29,14 +30,21 @@
         "backlight",
         "keyboard-state",
         //"hyprland/language",
-        "battery",
-        "battery#bat2",
+        //"battery",
+        //"battery#bat2",
         "clock",
         "tray",
         "custom/power"
     ],
 
-    // Modules configuration
+   "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+   },
+   // Modules configuration
      "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
