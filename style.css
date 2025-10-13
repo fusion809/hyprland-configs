@@ -64,7 +64,7 @@ window#waybar.hidden {
   padding: 3px 3px;
   padding-right: 0px;
   background-color: #1e1e2e;
-  color: #181825;
+  color: #000000;
 }
 
 #disk {
