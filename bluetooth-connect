@@ -1,0 +1,5 @@
+bluetoothctl agent KeyboardOnly
+bluetoothctl agent on
+bluetoothctl power on
+bluetoothctl trust 00:A4:1C:F5:00:63
+bluetoothctl connect 00:A4:1C:F5:00:63
