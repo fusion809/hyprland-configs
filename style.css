@@ -37,7 +37,7 @@ window#waybar.hidden {
 
 #workspaces button.active {
   color: #1e1e2e;
-  background-color: #cdd6f4;
+  background-color: #dff6f4;
 }
 
 #workspaces button:hover {
@@ -79,10 +79,29 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
-#memory, #cpu {
+#memory, #cpu, #window {
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
+}
+
+#custom-archicon, #custom-bluetooth-connect {
+	border-radius: 2px;
+	margin: 3px 1.5px;
+	padding: 3px 6px;
+}
+
+#custom-bluetooth-connect {
+	/*background-color: white;*/
+	color: #aaaaff;
+}
+
+#custom-archicon {
+	background-color: #aaeeff;
+	color: #0000ff;
+}
+
+#memory, #cpu {
   color: #000000;
 }
 
@@ -92,6 +111,10 @@ window#waybar.hidden {
 
 #cpu {
   background-color: #aaffff;
+}
+
+#window {
+	background-color: #004444;
 }
 #pulseaudio {
   border-radius: 4px;
