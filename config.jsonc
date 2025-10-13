@@ -73,7 +73,7 @@
          }
     },
     "custom/archicon": {
-	"format": "",
+	"format": " ",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/arch_menu.xml", // Menu file in resources folder
