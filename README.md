@@ -1,5 +1,5 @@
 # My Hyprland configuration files
-![](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-13.png)
+![Hyprland on Arch screenshot as of 14 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-14.png)
 
 **Figure 1: Hyprland Arch Linux configuration as of 13 October 2025.**
 

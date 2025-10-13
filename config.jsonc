@@ -11,7 +11,8 @@
 	"custom/archicon",
         "hyprland/workspaces",
         "hyprland/mode",
-	"custom/weather"
+	"custom/weather",
+	"custom/wallpaper"
     ],
     "modules-center": [
         "hyprland/window"
@@ -19,7 +20,6 @@
     "modules-right": [
       // "mpd",
       //"idle_inhibitor",
-        "custom/wallpaper",
 	"custom/bluetooth-connect",
         "pulseaudio",
 	"disk",
