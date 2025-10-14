@@ -51,9 +51,10 @@
    },
    // Modules configuration
      "hyprland/workspaces": {
-         "disable-scroll": true,
+	 "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
          "all-outputs": true,
-         "warp-on-scroll": false,
+         "on-click": "activate",
          "format": "{name}: {icon}",
          "format-icons": {
              "1": " ",
@@ -61,7 +62,7 @@
              "3": " / ",
 	     "4": " / ",
 	     "5": " / ",
-	     "6": " ",
+	     "6": " / ",
 	     "7": " ",
 	     "8": "󰝆",
 	     "9": " ",
@@ -96,8 +97,6 @@
       "interval": 0                       // Don’t poll or update automatically
     },
     "custom/bluetooth-connect": {
-      "exec": "/home/fusion809/.local/bin/bluetooth-connect",
-      "exec_if": "bluetoothctl show",
       "format": "",
       "on-click": "bluetooth-connect",
       "tooltip": "Connect to Bluetooth device"
