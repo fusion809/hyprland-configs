@@ -40,13 +40,13 @@ echo "$NEXT_INDEX" > "$STATE_FILE"
 WALL="${WALLS[$NEXT_INDEX]}"
 
 # Apply wallpaper
-if ! `pgrep -x "niri" &> /dev/null`; then
-	if ! `pgrep -x "hyprpaper" &> /dev/null`; then
-		hyprpaper &
-	fi
-	hyprctl hyprpaper preload "$WALL"
-	sleep 0.2   # small delay so preload completes
-	hyprctl hyprpaper wallpaper ",$WALL"
-else
+#if ! `pgrep -x "niri" &> /dev/null`; then
+#	if ! `pgrep -x "hyprpaper" &> /dev/null`; then
+#		hyprpaper &
+#	fi
+#	hyprctl hyprpaper preload "$WALL"
+#	sleep 0.2   # small delay so preload completes
+#	hyprctl hyprpaper wallpaper ",$WALL"
+#else
 	swaybg -i "$WALL" &
-fi
+#fi
