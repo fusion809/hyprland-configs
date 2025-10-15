@@ -40,7 +40,7 @@
    "custom/weather": {
     "format": "{}°",
     "tooltip": true,
-    "interval": 1,
+    "interval": 60,
     "exec": "wttrbar",
     "return-type": "json"
    },
