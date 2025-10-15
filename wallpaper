@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-if ! `pgrep -x "hyprpaper" &> /dev/null`; then
-	hyprpaper &
-fi
 # Cycles through wallpapers from multiple directories for Hyprpaper
 
 # Directories to search
@@ -43,6 +40,13 @@ echo "$NEXT_INDEX" > "$STATE_FILE"
 WALL="${WALLS[$NEXT_INDEX]}"
 
 # Apply wallpaper
-hyprctl hyprpaper preload "$WALL"
-sleep 0.2   # small delay so preload completes
-hyprctl hyprpaper wallpaper ",$WALL"
+if ! `pgrep -x "niri" &> /dev/null`; then
+	if ! `pgrep -x "hyprpaper" &> /dev/null`; then
+		hyprpaper &
+	fi
+	hyprctl hyprpaper preload "$WALL"
+	sleep 0.2   # small delay so preload completes
+	hyprctl hyprpaper wallpaper ",$WALL"
+else
+	swaybg -i "$WALL" &
+fi
