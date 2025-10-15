@@ -13,6 +13,7 @@ ln -sf $PWD/focus-chrome ~/.local/bin/
 ln -sf $PWD/focus-terminal ~/.local/bin/
 ln -sf $PWD/focus-nautilus ~/.local/bin/
 ln -sf $PWD/runescape ~/.local/bin/
+ln -sf $PWD/screenshot ~/.local/bin/
 ln -sf $PWD/wallpaper ~/.local/bin/
 if ! [[ -d $HOME/.config/waybar ]]; then
 	mkdir -p $HOME/.config/waybar
