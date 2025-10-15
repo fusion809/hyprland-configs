@@ -34,4 +34,4 @@ if ! [[ -d $HOME/.config/alacritty ]]; then
 fi
 ln -sf $PWD/alacritty.conf ~/.config/alacritty/
 popd
-yay -S alacritty kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi hyprpaper gvim-gtk2 wttrbar wl-clipboard --noconfirm --needed
+yay -S alacritty kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi swaybg gvim-gtk2 wttrbar wl-clipboard --noconfirm --needed
