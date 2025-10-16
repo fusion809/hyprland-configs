@@ -12,8 +12,13 @@
         </object>
 	</child>
 	<child>
-        <object class="GtkMenuItem" id="configs">
+        <object class="GtkMenuItem" id="hyprlandconfigs">
 			<property name="label">Edit hyprland configs</property>
+        </object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="config.kdl">
+			<property name="label">Edit config.kdl</property>
         </object>
 	</child>
 	<child>
