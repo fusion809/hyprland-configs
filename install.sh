@@ -35,4 +35,6 @@ if ! [[ -d $HOME/.config/alacritty ]]; then
 fi
 ln -sf $PWD/alacritty.conf ~/.config/alacritty/
 popd
-yay -S alacritty kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi swaybg gvim-gtk2 wttrbar wl-clipboard --noconfirm --needed
+yay -S alacritty kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi swaybg gvim-gtk2 wttrbar wl-clipboard cmake meson cpio pkg-config git --noconfirm --needed
+hyprpm add https://github.com/outfoxxed/hy3
+hyprpm update
