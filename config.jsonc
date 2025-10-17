@@ -95,10 +95,11 @@
 		}
     },
     "custom/wallpaper": {
-      "format": "󰸉 ",                      // Nerd Font “wallpaper” icon (use any glyph you like)
+      "exec": "/home/fusion809/GitHub/mine/config/hyprland-configs/no-wallpapers",
+      "format": "󰸉 {}",                      // Nerd Font “wallpaper” icon (use any glyph you like)
       "tooltip": "Change wallpaper",      // Tooltip when you hover
       "on-click": "/home/fusion809/.local/bin/wallpaper", // Command executed on click
-      "interval": 0                       // Don’t poll or update automatically
+      "interval": 1                       // Don’t poll or update automatically
     },
     "custom/bluetooth-connect": {
       "format": "",

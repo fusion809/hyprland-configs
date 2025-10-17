@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" | wc -l) ; user=$(find ~/Pictures/Wallpapers -name "*.*g" | wc -l); echo $(($root+$user))
