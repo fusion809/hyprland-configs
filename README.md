@@ -9,4 +9,4 @@ This repository contains my Hyprland configuration files.
 To install these scripts, run the install.sh script. It merely gets the repo, sets up appropriate symlinks and installs some required packages. 
 
 ## Chrome notifications, how to prevent them take up a whole window
-I found that to avoid Google Chrome notifications taking up their own window and instead being displayed as a popup in the right-hand top corner of the screen, one needs to install GNOME but can then remove all the packages listed in rm-gnome-packages.txt.
+I found that to avoid Google Chrome notifications taking up their own window and instead being displayed as a popup in the right-hand top corner of the screen, one needs to install GNOME but can then remove all the packages listed in rmed-gnome-packages.txt.
