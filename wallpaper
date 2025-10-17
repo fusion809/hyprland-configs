@@ -6,6 +6,8 @@ DIRS=(
     "$HOME/Pictures/Wallpapers"
     "/usr/share/backgrounds"
     "/usr/share/wallpapers"
+    "$HOME/.local/share/wallpapers"
+    "$HOME/.local/share/backgrounds"
 )
 
 # Collect all image paths (jpg, png, jpeg)
