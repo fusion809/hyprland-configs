@@ -194,11 +194,11 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
+			"shutdown": "sudo shutdown",
+			"reboot": "sudo reboot",
 			"logout": "hyprctl dispatch exit",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"suspend": "sudo systemctl suspend",
+			"hibernate": "sudo systemctl hibernate"
 		}
     }
 }
