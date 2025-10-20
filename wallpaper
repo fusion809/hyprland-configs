@@ -29,7 +29,7 @@ fi
 
 if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 	# File to remember last wallpaper
-	STATE_FILE="$HOME/.cache/hyprpaper-wallstate"
+	STATE_FILE="$HOME/.cache/swaybg-wallstate"
 
 	# Get index of next wallpaper
 	if [[ -f "$STATE_FILE" ]]; then
@@ -48,15 +48,16 @@ else
 	echo "Invalid argument given to wallpaper. Must be random, Random, systematic or Systematic!"
 	exit 1
 fi
-
+touch ~/.cache/wallpaper-name
+echo $WALL > ~/.cache/wallpaper-name
 # Apply wallpaper
 #if ! `pgrep -x "niri" &> /dev/null`; then
-#	if ! `pgrep -x "hyprpaper" &> /dev/null`; then
-#		hyprpaper &
+#	if ! `pgrep -x "swaybg" &> /dev/null`; then
+#		swaybg &
 #	fi
-#	hyprctl hyprpaper preload "$WALL"
+#	hyprctl swaybg preload "$WALL"
 #	sleep 0.2   # small delay so preload completes
-#	hyprctl hyprpaper wallpaper ",$WALL"
+#	hyprctl swaybg wallpaper ",$WALL"
 #else
 	swaybg -i "$WALL" &
 #fi
