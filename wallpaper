@@ -10,6 +10,7 @@ DIRS=(
     "$HOME/.local/share/backgrounds"
 )
 
+echo "Setting = $1"
 # Collect all image paths (jpg, png, jpeg)
 WALLS=()
 for d in "${DIRS[@]}"; do
@@ -26,20 +27,27 @@ if [[ ${#WALLS[@]} -eq 0 ]]; then
     exit 1
 fi
 
-# File to remember last wallpaper
-STATE_FILE="$HOME/.cache/hyprpaper-wallstate"
+if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
+	# File to remember last wallpaper
+	STATE_FILE="$HOME/.cache/hyprpaper-wallstate"
 
-# Get index of next wallpaper
-if [[ -f "$STATE_FILE" ]]; then
-    LAST_INDEX=$(<"$STATE_FILE")
+	# Get index of next wallpaper
+	if [[ -f "$STATE_FILE" ]]; then
+	    LAST_INDEX=$(<"$STATE_FILE")
+	else
+	    LAST_INDEX=-1
+	fi
+
+	NEXT_INDEX=$(( (LAST_INDEX + 1) % ${#WALLS[@]} ))
+	echo "$NEXT_INDEX" > "$STATE_FILE"
+
+	WALL="${WALLS[$NEXT_INDEX]}"
+elif `echo "$1" | grep "[rR]andom" &> /dev/null `; then
+	WALL="${WALLS[RANDOM % ${#WALLS[@]}]}"
 else
-    LAST_INDEX=-1
+	echo "Invalid argument given to wallpaper. Must be random, Random, systematic or Systematic!"
+	exit 1
 fi
-
-NEXT_INDEX=$(( (LAST_INDEX + 1) % ${#WALLS[@]} ))
-echo "$NEXT_INDEX" > "$STATE_FILE"
-
-WALL="${WALLS[$NEXT_INDEX]}"
 
 # Apply wallpaper
 #if ! `pgrep -x "niri" &> /dev/null`; then
