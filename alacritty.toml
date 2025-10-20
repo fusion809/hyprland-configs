@@ -9,3 +9,5 @@ action = "Paste"
 [font]
 size = 12
 normal = {family = "JetBrainsMono Nerd Font"}
+bold = {family = "JetBrainsMono NF ExtraBold"}
+italic = {family = "JetBrainsMono NF"}
