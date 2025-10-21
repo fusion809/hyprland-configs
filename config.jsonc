@@ -105,7 +105,7 @@
     "custom/wallpaper-previous": {
 	    "format": "",
 	    "tooltip": "Previous wallpaper",
-	    "on-click": "$HOME/Github/mine/config/hyprland-configs/wallpaper systematic previous"
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic previous"
     },
     "custom/wallpaper-random": {
 	    "format": "",
@@ -115,7 +115,7 @@
     "custom/wallpaper-next": {
 	    "format": "",
 	    "tooltip": "Previous wallpaper",
-	    "on-click": "$HOME/Github/mine/config/hyprland-configs/wallpaper systematic previous"
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic next"
     },
     "custom/bluetooth-connect": {
       "format": "",
