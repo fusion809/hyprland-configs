@@ -13,20 +13,23 @@ DIRS=(
 echo "Setting = $1"
 # Collect all image paths (jpg, png, jpeg)
 WALLS=()
-for d in "${DIRS[@]}"; do
-    if [[ -d "$d" ]]; then
+
+for dir in "${DIRS[@]}"; do
+	echo "dir = $dir"
+echo "Found ${#WALLS[@]} wallpapers"
+    if [[ -d "$dir" ]]; then
         while IFS= read -r -d '' file; do
             WALLS+=("$file")
-        done < <(find "$d" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 2>/dev/null)
+        done < <(find "$dir" -type f -name "*.*g" -print0)
     fi
 done
-
+echo "Found ${#WALLS[@]} wallpapers"
 # Exit if no wallpapers found
 if [[ ${#WALLS[@]} -eq 0 ]]; then
     notify-send "Wallcycle" "No wallpapers found in configured directories."
     exit 1
 fi
-
+no="${#WALLS[@]}"
 if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 	# File to remember last wallpaper
 	STATE_FILE="$HOME/.cache/swaybg-wallstate"
@@ -47,7 +50,11 @@ if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 
 	WALL="${WALLS[$NEXT_INDEX]}"
 elif `echo "$1" | grep "[rR]andom" &> /dev/null `; then
-	WALL="${WALLS[RANDOM % ${#WALLS[@]}]}"
+	# File to remember last wallpaper
+	STATE_FILE="$HOME/.cache/swaybg-wallstate-random"
+	NEXT_INDEX=$(( RANDOM % no + 1 ))
+	echo "$NEXT_INDEX" > "$STATE_FILE"
+	WALL="${WALLS[$NEXT_INDEX]}"
 else
 	echo "Invalid argument given to wallpaper. Must be random, Random, systematic or Systematic!"
 	exit 1

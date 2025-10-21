@@ -1,8 +1,21 @@
 #!/usr/bin/env bash
-root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" | wc -l) ; 
-userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" | wc -l);
-userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" | wc -l);
+root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" -type f | wc -l) ; 
+userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
+userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f | wc -l);
 user=$(($userpi+$userls))
 no=$(($root+$user))
-curr=$(cat $HOME/.cache/swaybg-wallstate)
+#curr=$(cat $HOME/.cache/swaybg-wallstate)
+# Define the two possible files
+f1="$HOME/.cache/swaybg-wallstate"
+f2="$HOME/.cache/swaybg-wallstate-random"
+
+# Find the most recently modified of the two
+latest=$(ls -t "$f1" "$f2" 2>/dev/null | head -n1)
+
+# If one exists, read its contents into curr
+if [ -n "$latest" ]; then
+    curr=$(<"$latest")
+else
+    curr=""
+fi
 echo "$curr/$no"
