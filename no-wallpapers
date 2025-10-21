@@ -11,11 +11,12 @@ f2="$HOME/.cache/swaybg-wallstate-random"
 
 # Find the most recently modified of the two
 latest=$(ls -t "$f1" "$f2" 2>/dev/null | head -n1)
-
+width="${#no}"
 # If one exists, read its contents into curr
 if [ -n "$latest" ]; then
     curr=$(<"$latest")
 else
     curr=""
 fi
-echo "$curr/$no"
+padded=$(printf "%0${width}d" "$curr")
+echo "$padded/$no"
