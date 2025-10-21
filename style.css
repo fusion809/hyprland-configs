@@ -135,13 +135,27 @@ window#waybar.hidden {
 	background-color: #004444;
 	color: #ffffff;
 }
-#custom-wallpaper {
+#custom-wallpaper-no, #custom-wallpaper-previous, #custom-wallpaper-random, #custom-wallpaper-next {
   border-radius: 4px;
   margin: 6px 1px;
   padding: 3px 6px;
-  background-color: #ff9999;
   color: #000000;
 }
+
+#custom-wallpaper-no {
+	  background-color: #ff9999;
+}
+
+#custom-wallpaper-previous {
+	background-color: #99ffff;
+}
+#custom-wallpaper-random {
+	background-color: #9999ff;
+}
+#custom-wallpaper-next {
+	background-color: #99ff99;
+}
+
 #pulseaudio {
   border-radius: 4px;
   margin: 6px 1px;

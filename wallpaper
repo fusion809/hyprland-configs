@@ -38,7 +38,11 @@ if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 	    LAST_INDEX=-1
 	fi
 
-	NEXT_INDEX=$(( (LAST_INDEX + 1) % ${#WALLS[@]} ))
+	if `echo "$2" | grep "[pP]revious" &> /dev/null`; then
+		NEXT_INDEX=$(( (LAST_INDEX - 1) % ${#WALLS[@]} ))
+	else
+		NEXT_INDEX=$(( (LAST_INDEX + 1) % ${#WALLS[@]} ))
+	fi
 	echo "$NEXT_INDEX" > "$STATE_FILE"
 
 	WALL="${WALLS[$NEXT_INDEX]}"

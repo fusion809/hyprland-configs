@@ -12,7 +12,10 @@
         "hyprland/workspaces",
         "hyprland/mode",
 	"custom/weather",
-	"custom/wallpaper"
+	"custom/wallpaper-no",
+	"custom/wallpaper-previous",
+	"custom/wallpaper-random",
+	"custom/wallpaper-next"
     ],
     "modules-center": [
         "hyprland/window"
@@ -94,11 +97,25 @@
 			"power_menu.xml": "gvim ~/.config/waybar/power_menu.xml"
 		}
     },
-    "custom/wallpaper": {
+    "custom/wallpaper-no": {
       "exec": "$HOME/GitHub/mine/config/hyprland-configs/no-wallpapers",
-      "format": "{} 󰸉",                      // Nerd Font “wallpaper” icon (use any glyph you like)
-      "on-click": "$HOME/.local/bin/wallpaper systematic", // Command executed on click
+      "format": "󰸉: {}",                      // Nerd Font “wallpaper” icon (use any glyph you like)
       "interval": 1                       // Don’t poll or update automatically
+    },
+    "custom/wallpaper-previous": {
+	    "format": "",
+	    "tooltip": "Previous wallpaper",
+	    "on-click": "$HOME/Github/mine/config/hyprland-configs/wallpaper systematic previous"
+    },
+    "custom/wallpaper-random": {
+	    "format": "",
+	    "tooltip": "Random wallpaper",
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper random"
+    },
+    "custom/wallpaper-next": {
+	    "format": "",
+	    "tooltip": "Previous wallpaper",
+	    "on-click": "$HOME/Github/mine/config/hyprland-configs/wallpaper systematic previous"
     },
     "custom/bluetooth-connect": {
       "format": "",
