@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" | wc -l) ; user=$(find ~/Pictures/Wallpapers -name "*.*g" | wc -l); echo $(($root+$user))
+root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" | wc -l) ; 
+userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" | wc -l);
+userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" | wc -l);
+user=$(($userpi+$userls))
+no=$(($root+$user))
+curr=$(cat $HOME/.cache/swaybg-wallstate)
+echo "$curr/$no"
