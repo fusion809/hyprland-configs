@@ -99,28 +99,35 @@
     },
     "custom/wallpaper-no": {
       "exec": "$HOME/GitHub/mine/config/hyprland-configs/no-wallpapers",
-      "format": "󰸉: {}",                      // Nerd Font “wallpaper” icon (use any glyph you like)
-      "interval": 1                       // Don’t poll or update automatically
+      "format": "󰸉: {}",                      // Nerd Font “wallpaper” icon
+      "tooltip": true,
+      "tooltip-format": "Wallpaper: number selected/total number",
+      "interval": 1                           // Don’t poll or update automatically
+
     },
     "custom/wallpaper-previous": {
 	    "format": "",
-	    "tooltip": "Previous wallpaper",
+	    "tooltip": true,
+	    "tooltip-format": "Previous wallpaper",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic previous"
     },
     "custom/wallpaper-random": {
 	    "format": "",
-	    "tooltip": "Random wallpaper",
+	    "tooltip": true,
+	    "tooltip-format": "Random wallpaper",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper random"
     },
     "custom/wallpaper-next": {
 	    "format": "",
-	    "tooltip": "Previous wallpaper",
+	    "tooltip": true,
+	    "tooltip-format": "Next wallpaper",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic next"
     },
     "custom/bluetooth-connect": {
       "format": "",
       "on-click": "bluetooth-connect",
-      "tooltip": "Connect to Bluetooth device"
+      "tooltip": true,
+      "tooltip-format": "Connect to Bluetooth device"
     },
     "keyboard-state": {
         "numlock": true,
