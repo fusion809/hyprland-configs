@@ -8,13 +8,31 @@ This repository contains my [Hyprland](https://wiki.archlinux.org/title/Hyprland
 # Installation
 To install these scripts, run the `install.sh` script. It merely gets the repo, sets up appropriate symlinks and installs some required packages. 
 
+# Waybar
+The waybar has the following components:
+* The Arch menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.
+* Workspaces.
+* Weather conditions, obtained by wttr.in. Beware that wttr.in can be quite unreliable at times.
+* Wallpaper number widget: it displays the number of the wallpaper most recently displayed on your desktop, then a forward slash, and then the total number of wallpapers you have installed on your system.
+* A left arrow that, when clicked, changes your wallpaper to the previous one in your collection (keeping in mind, this is when you're using the systematic algorithm for the wallpaper script).
+* A shuffling arrow that, when clicked, changes your wallpaper to a randomly selected one.
+* A forward arrow that, when clicked, changes your wallpaper to the next systematically selected one. 
+* The title of your currently focused window.
+* Pulseaudio showing the volume of your output audio device.
+* Used spaced on your root file system.
+* Internet download/upload speed on enp24s0 interface.
+* CPU usage percentage.
+* RAM usage percentage.
+* Clock with AM/PM time with seconds, short day of the week name, day of the month/month of the year/year (short format). 
+* A menu that gives logout, shutdown, reboot, hibernate and suspend options.
+
 # Chrome notifications, how to prevent them take up a whole window
 I found that to avoid Google Chrome notifications taking up their own window and instead being displayed as a popup in the right-hand top corner of the screen, one needs to install GNOME but can then remove all the packages listed in `rmed-gnome-packages.txt`.
 
 # Wallpaper script
 There is a script within this repository called `wallpaper` that will, using swaybg, set your background to a wallpaper in `/usr/share/wallpapers`, `/usr/share/backgrounds`, `~/.local/share/backgrounds`, `~/.local/share/wallpapers` or `~/Pictures/Wallpapers`. I originally used hyprpaper to set the wallpaper, I find hyprpaper more difficult to use and I also use the wallpaper script under Niri. 
 
-Syntax
+## Syntax
 
 ```bash
 wallpaper <algorithm> [direction]
