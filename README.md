@@ -131,5 +131,4 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd>                      | Move window up (tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Right</kbd>                      | Move window right (tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd>                 | Open workspace of Alacritty terminal. |
-
 | <kbd>Win</kbd>+<kbd>t</kbd>                                       | Enter tabbed mode.         |
