@@ -17,11 +17,6 @@
         </object>
 	</child>
 	<child>
-        <object class="GtkMenuItem" id="config.kdl">
-			<property name="label">Edit config.kdl</property>
-        </object>
-	</child>
-	<child>
         <object class="GtkMenuItem" id="hyprland.conf">
 			<property name="label">Edit hyprland.conf</property>
         </object>

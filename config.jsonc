@@ -85,10 +85,7 @@
 		"menu-actions": {
 			"wiki": "xdg-open https://wiki.archlinux.org",
 			"aur": "xdg-open https://aur.archlinux.org",
-			"hyprlandconfigs": "code $HOME/GitHub/mine/config/hyprland-configs",
-			"niriconfigs": "code $HOME/GitHub/mine/config/niri-configs",
 			"hyprland.conf": "gvim ~/.config/hypr/hyprland.conf",
-			"config.kdl": "gvim ~/.config/niri/config.kdl",
 			"kitty.conf": "gvim ~/.config/kitty/kitty.conf",
 			"alacritty.toml": "gvim ~/.config/alacritty/alacritty.toml",
 			"config.jsonc": "gvim ~/.config/waybar/config.jsonc",

@@ -3,16 +3,24 @@
 
 **Figure 1: Hyprland Arch Linux configuration as of 22 October 2025.**
 
-This repository contains my Hyprland configuration files. 
+This repository contains my [Hyprland](https://wiki.archlinux.org/title/Hyprland) configuration files. 
 
-## Installation
-To install these scripts, run the install.sh script. It merely gets the repo, sets up appropriate symlinks and installs some required packages. 
+# Installation
+To install these scripts, run the `install.sh` script. It merely gets the repo, sets up appropriate symlinks and installs some required packages. 
 
 # Chrome notifications, how to prevent them take up a whole window
-I found that to avoid Google Chrome notifications taking up their own window and instead being displayed as a popup in the right-hand top corner of the screen, one needs to install GNOME but can then remove all the packages listed in rmed-gnome-packages.txt.
+I found that to avoid Google Chrome notifications taking up their own window and instead being displayed as a popup in the right-hand top corner of the screen, one needs to install GNOME but can then remove all the packages listed in `rmed-gnome-packages.txt`.
 
 # Wallpaper script
-There is a script within this repository called "wallpaper" that will, using swaybg, set your background to a wallpaper in /usr/share/wallpapers, /usr/share/backgrounds, ~/.local/share/backgrounds, ~/.local/share/wallpapers or ~/Pictures/Wallpapers. `wallpaper` takes two options, the first of which is mandatory, the second is optional. The first argument decides which algorithm is used to decide the wallpaper set as your background. If you give it the argument `random`, you will get a randomly decided wallpaper out of those within those specified directories. If you give it the argument `systematic`, wallpaper will systematically go through the wallpapers one by one. The second argument can be "previous" or something else. If it is previous and the first argument is "systematic", this will lead to the previous wallpaper being shown. Otherwise the next wallpaper will be shown.  
+There is a script within this repository called `wallpaper` that will, using swaybg, set your background to a wallpaper in `/usr/share/wallpapers`, `/usr/share/backgrounds`, `~/.local/share/backgrounds`, `~/.local/share/wallpapers` or `~/Pictures/Wallpapers`. I originally used hyprpaper to set the wallpaper, I find hyprpaper more difficult to use and I also use the wallpaper script under Niri. 
+
+Syntax
+
+```bash
+wallpaper <algorithm> [direction]
+```
+
+The algorithm argument is mandatory; the direction argument is optional. The algorithm argument decides which algorithm is used to decide the wallpaper set as your background. If you give it the argument `random` (first letter's case doesn't matter), you will get a randomly decided wallpaper out of those within those specified directories. If you give it the argument `systematic` (first letter's case also doesn't matter), wallpaper will systematically go through the wallpapers one by one. The direction argument can be "previous" or something else. If it is previous and the first argument is "systematic", this will lead to the previous wallpaper being shown. Otherwise the next wallpaper will be shown. This is also the default behaviour if direction is omitted.
 
 # Keyboard shortcuts
 | Keyboard combination                                             | Action                |
