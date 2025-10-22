@@ -1,7 +1,7 @@
 bluetoothctl agent KeyboardOnly
 bluetoothctl agent on
 bluetoothctl power on
-bluetoothctl remove 00:A4:1C:F5:00:63
-bluetoothctl pair 00:A4:1C:F5:00:63
-bluetoothctl trust 00:A4:1C:F5:00:63
-bluetoothctl connect 00:A4:1C:F5:00:63
+bluetoothctl remove $1
+bluetoothctl pair $1
+bluetoothctl trust $1
+bluetoothctl connect $1
