@@ -1,7 +1,7 @@
 # My Hyprland configuration files
-![Hyprland on Arch screenshot as of 14 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-14.png)
+![Hyprland on Arch screenshot as of 22 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-22.png)
 
-**Figure 1: Hyprland Arch Linux configuration as of 13 October 2025.**
+**Figure 1: Hyprland Arch Linux configuration as of 22 October 2025.**
 
 This repository contains my Hyprland configuration files. 
 
