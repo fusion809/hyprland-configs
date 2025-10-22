@@ -96,7 +96,7 @@
     },
     "custom/wallpaper-no": {
       "exec": "$HOME/GitHub/mine/config/hyprland-configs/no-wallpapers",
-      "format": "󰸉: {}",                      // Nerd Font “wallpaper” icon
+      "format": "󰸉 {}",                      // Nerd Font “wallpaper” icon
       "tooltip": true,
       "tooltip-format": "Wallpaper: number selected/total number",
       "interval": 1                           // Don’t poll or update automatically
