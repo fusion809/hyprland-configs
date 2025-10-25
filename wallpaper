@@ -6,6 +6,7 @@ DIRS=(
     "$HOME/Pictures/Wallpapers"
     "/usr/share/backgrounds"
     "/usr/share/wallpapers"
+    "/usr/share/antergos/wallpapers"
     "$HOME/.local/share/wallpapers"
     "$HOME/.local/share/backgrounds"
 )

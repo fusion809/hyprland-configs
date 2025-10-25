@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" -type f | wc -l) ; 
+rootant=$(find /usr/share/antergos/wallpapers -name "*.*g" -type f | wc -l);
+root=$(($root+$rootant))
 userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
 userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f | wc -l);
 user=$(($userpi+$userls))
