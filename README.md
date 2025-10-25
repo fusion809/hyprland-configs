@@ -111,7 +111,7 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Right</kbd>                                   | Move focus right. |
 | <kbd>Win</kbd>+<kbd>Down</kbd>                                    | Move focus down. |
 | <kbd>Win</kbd>+<kbd>Up</kbd>                                      | Move focus up. |
-| <kbd>Win</kbd>+<kbd>Space</kbd>                                   | Float current window. |
+| <kbd>Win</kbd>+<kbd>Space</kbd>                                   | Change keyboard (between US and Brazilian Portuguese). |
 | <kbd>Win</kbd>+<kbd>Tab</kbd>                                     | Open Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Return</kbd>                                  | Open Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>b</kbd>                      | Open bluetooth manager |
@@ -131,4 +131,5 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd>                      | Move window up (tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Right</kbd>                      | Move window right (tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd>                 | Open workspace of Alacritty terminal. |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>                  | Toggle float of focused window. | 
 | <kbd>Win</kbd>+<kbd>t</kbd>                                       | Enter tabbed mode.         |
