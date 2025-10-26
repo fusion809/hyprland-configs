@@ -23,6 +23,7 @@ The waybar has the following components:
 * Internet download/upload speed on enp24s0 interface.
 * CPU usage percentage.
 * RAM usage percentage.
+* Keyboard layout (just the two-letter initial though). 
 * Clock with AM/PM time with seconds, short day of the week name, day of the month/month of the year/year (short format). 
 * A menu that gives logout, shutdown, reboot, hibernate and suspend options.
 
