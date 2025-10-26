@@ -120,6 +120,7 @@ window#waybar.hidden {
 #custom-archicon {
 	background-color: #aaeeff;
 	color: #0000ff;
+	padding-right: 6px;
 }
 
 #custom-weather {
