@@ -229,6 +229,6 @@
 	    "on-click": "hyprctl switchxkblayout current next",
 	    "tooltip": true,
 	    "interval": 1,
-	    "tooltip-format": "Keyboard layout; press Super+Space to change it"
+	    "tooltip-format": "Keyboard layout; click or press Super+Space to change it."
     }
 }
