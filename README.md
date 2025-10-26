@@ -42,49 +42,49 @@ wallpaper <algorithm> [direction]
 The algorithm argument is mandatory; the direction argument is optional. The algorithm argument decides which algorithm is used to decide the wallpaper set as your background. If you give it the argument `random` (first letter's case doesn't matter), you will get a randomly decided wallpaper out of those within those specified directories. If you give it the argument `systematic` (first letter's case also doesn't matter), wallpaper will systematically go through the wallpapers one by one. The direction argument can be "previous" or something else. If it is previous and the first argument is "systematic", this will lead to the previous wallpaper being shown. Otherwise the next wallpaper will be shown. This is also the default behaviour if direction is omitted.
 
 # Keyboard shortcuts
-| Keyboard combination                                             | Action                |
-|------------------------------------------------------------------|-----------------------|
-| <kbd>h</kbd>                                                     | Resize window (only in resize mode) to the left. | 
-| <kbd>l</kbd>                                                     | Resize window (only in resize mode) to the right. | 
-| <kbd>k</kbd>                                                     | Resize window (only in resize mode) down. | 
-| <kbd>j</kbd>                                                     | Resize window (only in resize mode) up. | 
-| <kbd>Left</kbd>                                                     | Resize window (only in resize mode) to the left. | 
-| <kbd>Right</kbd>                                                     | Resize window (only in resize mode) to the right. | 
-| <kbd>Down</kbd>                                                     | Resize window (only in resize mode) down. | 
+| Keyboard combination                                              | Action                |
+|-------------------------------------------------------------------|-----------------------|
+| <kbd>h</kbd>                                                      | Resize window (only in resize mode) to the left. | 
+| <kbd>l</kbd>                                                      | Resize window (only in resize mode) to the right. | 
+| <kbd>k</kbd>                                                      | Resize window (only in resize mode) down. | 
+| <kbd>j</kbd>                                                      | Resize window (only in resize mode) up. | 
+| <kbd>Left</kbd>                                                   | Resize window (only in resize mode) to the left. | 
+| <kbd>Right</kbd>                                                  | Resize window (only in resize mode) to the right. | 
+| <kbd>Down</kbd>                                                   | Resize window (only in resize mode) down. | 
 | <kbd>Up</kbd>                                                     | Resize window (only in resize mode) up. | 
-| <kbd>F1</kbd>                                                    | Open workspace #1     |
-| <kbd>Win</kbd>+<kbd>2</kbd>                                      | Open workspace #2     |
-| <kbd>F3</kbd>                                                    | Open workspace #3     |
-| <kbd>F4</kbd>                                                    | Open workspace #4     |
-| <kbd>F5</kbd>                                                    | Open workspace #5     |
-| <kbd>F6</kbd>                                                    | Open workspace #6     |
-| <kbd>F7</kbd>                                                    | Open workspace #7     |
-| <kbd>F8</kbd>                                                    | Open workspace #8     |
-| <kbd>F9</kbd>                                                    | Open workspace #9     |
-| <kbd>F10</kbd>                                                   | Open workspace #10    |
+| <kbd>F1</kbd>                                                     | Open workspace #1     |
+| <kbd>Win</kbd>+<kbd>2</kbd>                                       | Open workspace #2     |
+| <kbd>F3</kbd>                                                     | Open workspace #3     |
+| <kbd>F4</kbd>                                                     | Open workspace #4     |
+| <kbd>F5</kbd>                                                     | Open workspace #5     |
+| <kbd>F6</kbd>                                                     | Open workspace #6     |
+| <kbd>F7</kbd>                                                     | Open workspace #7     |
+| <kbd>F8</kbd>                                                     | Open workspace #8     |
+| <kbd>F9</kbd>                                                     | Open workspace #9     |
+| <kbd>F10</kbd>                                                    | Open workspace #10    |
 | <kbd>F11</kbd>                                                    | Open workspace of Google Chrome.  |
 | <kbd>F12</kbd>                                                    | Open workspace of Nautilus        
-| <kbd>Print</kbd>                                                 | Take a screenshot and copy it to clipboard. | 
-| <kbd>Win</kbd>+<kbd>F1</kbd>                                     | Open workspace #11    |
-| <kbd>Win</kbd>+<kbd>F2</kbd>                                     | Open workspace #12    |
-| <kbd>Win</kbd>+<kbd>F3</kbd>                                     | Open workspace #13    |
-| <kbd>Win</kbd>+<kbd>F4</kbd>                                     | Open workspace #14    |
-| <kbd>Win</kbd>+<kbd>F5</kbd>                                     | Open workspace #15    |
-| <kbd>Win</kbd>+<kbd>F6</kbd>                                     | Open workspace #16    |
-| <kbd>Win</kbd>+<kbd>F7</kbd>                                     | Open workspace #17    |
-| <kbd>Win</kbd>+<kbd>F8</kbd>                                     | Open workspace #18    |
-| <kbd>Win</kbd>+<kbd>F9</kbd>                                     | Open workspace #19    |
-| <kbd>Win</kbd>+<kbd>F10</kbd>                                    | Open workspace #20    |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>                     | Move focused window (silently) to workspace #1     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd>                     | Move focused window (silently) to workspace #2     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd>                     | Move focused window (silently) to workspace #3     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd>                     | Move focused window (silently) to workspace #4     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd>                     | Move focused window (silently) to workspace #5     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd>                     | Move focused window (silently) to workspace #6     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd>                     | Move focused window (silently) to workspace #7     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>8</kbd>                     | Move focused window (silently) to workspace #8     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd>                     | Move focused window (silently) to workspace #9     |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>                     | Move focused window (silently) to workspace #10    |
+| <kbd>Print</kbd>                                                  | Take a screenshot and copy it to clipboard. | 
+| <kbd>Win</kbd>+<kbd>F1</kbd>                                      | Open workspace #11    |
+| <kbd>Win</kbd>+<kbd>F2</kbd>                                      | Open workspace #12    |
+| <kbd>Win</kbd>+<kbd>F3</kbd>                                      | Open workspace #13    |
+| <kbd>Win</kbd>+<kbd>F4</kbd>                                      | Open workspace #14    |
+| <kbd>Win</kbd>+<kbd>F5</kbd>                                      | Open workspace #15    |
+| <kbd>Win</kbd>+<kbd>F6</kbd>                                      | Open workspace #16    |
+| <kbd>Win</kbd>+<kbd>F7</kbd>                                      | Open workspace #17    |
+| <kbd>Win</kbd>+<kbd>F8</kbd>                                      | Open workspace #18    |
+| <kbd>Win</kbd>+<kbd>F9</kbd>                                      | Open workspace #19    |
+| <kbd>Win</kbd>+<kbd>F10</kbd>                                     | Open workspace #20    |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>                      | Move focused window (silently) to workspace #1     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd>                      | Move focused window (silently) to workspace #2     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd>                      | Move focused window (silently) to workspace #3     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd>                      | Move focused window (silently) to workspace #4     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd>                      | Move focused window (silently) to workspace #5     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd>                      | Move focused window (silently) to workspace #6     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd>                      | Move focused window (silently) to workspace #7     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>8</kbd>                      | Move focused window (silently) to workspace #8     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd>                      | Move focused window (silently) to workspace #9     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>                      | Move focused window (silently) to workspace #10    |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>F1</kbd>                     | Move focused window (silently) to workspace #11     |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>F2</kbd>                     | Move focused window (silently) to workspace #12     |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>F3</kbd>                     | Move focused window (silently) to workspace #13     |
@@ -107,6 +107,8 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>o</kbd>                                       | Open RuneScape. |
 | <kbd>Win</kbd>+<kbd>p</kbd>                                       | Open Nautilus. | 
 | <kbd>Win</kbd>+<kbd>q</kbd>                                       | Close current window. |
+| <kbd>Win</kbd>+<kbd>s</kbd>                                       | Change wallpaper to a randomly selected one. |
+| <kbd>Win</kbd>+<kbd>t</kbd>                                       | Enter tabbed mode.         |
 | <kbd>Win</kbd>+<kbd>v</kbd>                                       | Open VirtualBox. |
 | <kbd>Win</kbd>+<kbd>w</kbd>                                       | Set wallpaper to the one after the current one specified in `$HOME/.cache/swaybg-wallstate` |
 | <kbd>Win</kbd>+<kbd>z</kbd>                                       | Set wallpaper to the one before the current one specified in `$HOME/.cache/swaybg-wallstate` |
@@ -127,13 +129,11 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Poweroff OS. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>q</kbd>                      | Open Quora Chrome app |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                      | Enter window resizing mode. | 
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>s</kbd>                      | Change wallpaper to a randomly selected one. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>w</kbd>                      | Open windows list in rofi |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>                      | Move window right (not including tabbed windows). |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Left</kbd>                      | Move window left (tabbed windows). |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Down</kbd>                      | Move window down (tabbed windows). |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd>                      | Move window up (tabbed windows). |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Right</kbd>                      | Move window right (tabbed windows). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Left</kbd>                   | Move window left (tabbed windows). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Down</kbd>                   | Move window down (tabbed windows). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd>                     | Move window up (tabbed windows). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Right</kbd>                  | Move window right (tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd>                 | Open workspace of Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>                  | Toggle float of focused window. | 
-| <kbd>Win</kbd>+<kbd>t</kbd>                                       | Enter tabbed mode.         |
