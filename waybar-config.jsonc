@@ -217,7 +217,6 @@
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
 			"shutdown": "sudo poweroff",
-			"reload": "hyprctl reload; pkill waybar; waybar",
 			"reboot": "sudo reboot",
 			"logout": "hyprctl dispatch exit",
 			"suspend": "sudo systemctl suspend",
