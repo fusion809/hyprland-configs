@@ -228,7 +228,7 @@
 	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/keyboard-layout",
 	    "on-click": "hyprctl switchxkblayout current next",
 	    "tooltip": true,
-	    "interval": 0,
+	    "interval": 1,
 	    "tooltip-format": "Keyboard layout; press Super+Space to change it"
     }
 }
