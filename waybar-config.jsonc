@@ -44,6 +44,7 @@
    "network": {
 	   "interface": "enp24s0",
 	   "format": " {bandwidthUpBits}  {bandwidthDownBits}",
+	   "on-click": "alacritty -e gtop",
 	   "interval": 1
    },
    // Modules configuration
@@ -133,7 +134,8 @@
     "disk": {
     	"format": "/ {used}/{total}",
     	"path": "/", // Or the path to the desired mount point, e.g., "/home"
-    	"interval": 30
+    	"interval": 1,
+	"on-click": "alacritty -e gtop"
     },
     "clock": {
         "timezone": "Australia/Brisbane",
@@ -143,10 +145,12 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+	"on-click": "alacritty -e gtop"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+	"on-click": "alacritty -e gtop"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
