@@ -106,19 +106,19 @@
     "custom/wallpaper-previous": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Previous wallpaper",
+	    "tooltip-format": "Previous wallpaper. Super+z achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic previous"
     },
     "custom/wallpaper-random": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Random wallpaper",
+	    "tooltip-format": "Random wallpaper. Super+Shift+s achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper random"
     },
     "custom/wallpaper-next": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Next wallpaper",
+	    "tooltip-format": "Next wallpaper. Super+w achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic next"
     },
     "custom/bluetooth-connect": {
