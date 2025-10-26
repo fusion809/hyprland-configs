@@ -102,12 +102,16 @@ window#waybar.hidden {
   padding-right: 6px;
 }
 
-#custom-archicon, #custom-bluetooth-connect, #custom-weather {
+#custom-archicon, #custom-bluetooth-connect, #custom-weather, #custom-keyboard-layout {
 	border-radius: 4px;
 	margin: 6px 1px;
 	padding: 3px 3px;
 }
 
+#custom-keyboard-layout {
+	background-color: #aa2200;
+	color: #ffffff;
+}
 #custom-bluetooth-connect {
 	background-color: #aaf9f9;
 	color: #0000ff;
@@ -198,8 +202,8 @@ window#waybar.hidden {
 
 #clock {
   font-family: JetBrainsMono Nerd Font;
-  background-color: #5511ff;
-  font-weight: bold;
+  background-color: #1144aa;
+  /*font-weight: bold;*/
   color: #ffffff;
 }
 

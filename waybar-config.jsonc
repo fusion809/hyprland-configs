@@ -31,7 +31,8 @@
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
+        //"keyboard-state",
+	"custom/keyboard-layout",
         //"hyprland/language",
         //"battery",
         //"battery#bat2",
@@ -195,7 +196,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "blueman-manager"
     },
     /*"custom/media": {
         "format": "{icon} {text}",
@@ -221,5 +222,11 @@
 			"suspend": "sudo systemctl suspend",
 			"hibernate": "sudo systemctl hibernate"
 		}
+    },
+    "custom/keyboard-layout": {
+	    "format": " {}",
+	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/keyboard-layout",
+	    "tooltip": true,
+	    "tooltip-format": "Keyboard layout; press Super+Space to change it"
     }
 }

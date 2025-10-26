@@ -1,0 +1,9 @@
+#!/bin/bash
+# This is courtesy of ChatGPT
+current_layout=$(hyprctl devices -j | jq -r '
+  .keyboards[]
+  | select(.main == true)
+  | ( if (.layout | type) == "array" then .layout else (.layout // "" | split(",")) end ) as $layouts
+  | ($layouts[(.active_layout_index // 0)] // "")
+')
+echo $current_layout
