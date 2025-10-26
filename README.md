@@ -101,6 +101,8 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>d</kbd>                                       | Open rofi dmenu            |
 | <kbd>Win</kbd>+<kbd>m</kbd>                                       | Open WhatsApp web |
 | <kbd>Win</kbd>+<kbd>f</kbd>                                       | Set window to full screen. | 
+| <kbd>Win</kbd>+<kbd>g</kbd>                                       | Launch gtop in Alacritty. |
+| <kbd>Win</kbd>+<kbd>h</kbd>                                       | Launch hyfetch in kitty. |
 | <kbd>Win</kbd>+<kbd>k</kbd>                                       | Open kitty terminal. |
 | <kbd>Win</kbd>+<kbd>o</kbd>                                       | Open RuneScape. |
 | <kbd>Win</kbd>+<kbd>p</kbd>                                       | Open Nautilus. | 

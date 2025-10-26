@@ -5,6 +5,6 @@ if ! [[ -d $HOME/GitHub/mine/config/hyprland-configs ]]; then
 	popd
 fi
 ./setup-symlinks.sh
-yay -S alacritty kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi swaybg gvim-gtk2 wttrbar wl-clipboard cmake meson cpio pkg-config git blueman-manager marked --noconfirm --needed
+yay -S alacritty kitty hyprland waybar bluetoothctl nautilus google-chrome steam rofi swaybg gvim-gtk2 wttrbar wl-clipboard cmake meson cpio pkg-config git blueman-manager marked hyfetch gtop --noconfirm --needed
 hyprpm add https://github.com/outfoxxed/hy3
 hyprpm update
