@@ -12,6 +12,11 @@
         </object>
 	</child>
 	<child>
+		<object class="GtkMenuItem" id="readme">
+			<property name="label">Read README of Hyprland configs</property>
+		</object>
+	</child>
+	<child>
         <object class="GtkMenuItem" id="hyprlandconfigs">
 			<property name="label">Edit hyprland configs</property>
         </object>

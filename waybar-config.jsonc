@@ -21,23 +21,16 @@
         "hyprland/window"
     ],
     "modules-right": [
-      // "mpd",
-      //"idle_inhibitor",
-	//"custom/bluetooth-connect",
         "pulseaudio",
 	"disk",
 	"network",
         "cpu",
         "memory",
-        "temperature",
         "backlight",
-        //"keyboard-state",
 	"custom/keyboard-layout",
-        //"hyprland/language",
         //"battery",
         //"battery#bat2",
         "clock",
-        //"tray",
         "custom/power"
     ],
 
@@ -86,6 +79,7 @@
 		"menu-actions": {
 			"wiki": "xdg-open https://wiki.archlinux.org",
 			"aur": "xdg-open https://aur.archlinux.org",
+			"readme": "cd $HOME/GitHub/mine/config/hyprland-configs ; marked -o README.html -i README.md ; google-chrome-stable README.html",
 			"hyprland.conf": "gvim ~/.config/hypr/hyprland.conf",
 			"kitty.conf": "gvim ~/.config/kitty/kitty.conf",
 			"alacritty.toml": "gvim ~/.config/alacritty/alacritty.toml",
@@ -136,23 +130,10 @@
             "unlocked": ""
         }
     },
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
     "disk": {
     	"format": "/ {used}/{total}",
     	"path": "/", // Or the path to the desired mount point, e.g., "/home"
     	"interval": 30
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        "spacing": 10
     },
     "clock": {
         "timezone": "Australia/Brisbane",
