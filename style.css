@@ -109,7 +109,7 @@ window#waybar.hidden {
 }
 
 #custom-keyboard-layout {
-	background-color: #aa2200;
+	background-color: #006600;
 	color: #ffffff;
 }
 #custom-bluetooth-connect {
@@ -208,7 +208,8 @@ window#waybar.hidden {
 }
 
 #custom-power {
-  background-color: #ffdddd;
+  background-color: #ff0000;
+  color: white;
 }
 
 
