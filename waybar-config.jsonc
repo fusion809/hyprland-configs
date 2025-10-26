@@ -106,19 +106,19 @@
     "custom/wallpaper-previous": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Previous wallpaper. Super+z achieves the same thing.",
+	    "tooltip-format": "Previous wallpaper. Win+z achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic previous"
     },
     "custom/wallpaper-random": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Random wallpaper. Super+Shift+s achieves the same thing.",
+	    "tooltip-format": "Random wallpaper. Win+Shift+s achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper random"
     },
     "custom/wallpaper-next": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Next wallpaper. Super+w achieves the same thing.",
+	    "tooltip-format": "Next wallpaper. Win+w achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic next"
     },
     "custom/bluetooth-connect": {
@@ -217,6 +217,7 @@
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
 			"shutdown": "sudo poweroff",
+			"reload": "hyprctl reload; pkill waybar; waybar",
 			"reboot": "sudo reboot",
 			"logout": "hyprctl dispatch exit",
 			"suspend": "sudo systemctl suspend",
@@ -229,6 +230,6 @@
 	    "on-click": "hyprctl switchxkblayout current next",
 	    "tooltip": true,
 	    "interval": 1,
-	    "tooltip-format": "Keyboard layout; click or press Super+Space to change it."
+	    "tooltip-format": "Keyboard layout; click or press Win+Space to change it."
     }
 }

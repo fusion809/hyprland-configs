@@ -122,6 +122,7 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>j</kbd>                      | Move window left (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>k</kbd>                      | Move window down (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>l</kbd>                      | Move window up (not including tabbed windows). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Poweroff OS. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>q</kbd>                      | Open Quora Chrome app |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                      | Enter window resizing mode. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>s</kbd>                      | Change wallpaper to a randomly selected one. |
