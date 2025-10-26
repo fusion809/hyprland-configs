@@ -227,6 +227,7 @@
 	    "format": " {}",
 	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/keyboard-layout",
 	    "tooltip": true,
+	    "interval": 0,
 	    "tooltip-format": "Keyboard layout; press Super+Space to change it"
     }
 }
