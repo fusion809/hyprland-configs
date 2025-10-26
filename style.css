@@ -169,6 +169,7 @@ window#waybar.hidden {
   border-radius: 4px;
   margin: 6px 1px;
   padding: 3px 3px;
+  padding-right: 10px;
   background-color: #3f11a9;
   color: #f0f0f0;
 }
