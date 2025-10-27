@@ -1,7 +1,7 @@
 # My Hyprland configuration files
-![Hyprland on Arch screenshot as of 26 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-26.png)
+![Hyprland on Arch screenshot as of 28 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-28.png)
 
-**Figure 1: Hyprland Arch Linux configuration as of 26 October 2025.**
+**Figure 1: Hyprland Arch Linux configuration as of 28 October 2025.**
 
 This repository contains my [Hyprland](https://wiki.archlinux.org/title/Hyprland) configuration files. 
 
@@ -10,7 +10,7 @@ To install these scripts, run the `install.sh` script. It merely gets the repo, 
 
 # Waybar
 The waybar has the following components:
-* The Arch menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.
+<!--* The Arch menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.-->
 * Workspaces.
 * Weather conditions, obtained by wttr.in. Beware that wttr.in can be quite unreliable at times.
 * Wallpaper number widget: it displays the number of the wallpaper most recently displayed on your desktop, then a forward slash, and then the total number of wallpapers you have installed on your system.
@@ -25,6 +25,7 @@ The waybar has the following components:
 * RAM usage percentage.
 * Keyboard layout (just the two-letter initial though). 
 * Clock with AM/PM time with seconds, short day of the week name, day of the month/month of the year/year (short format). 
+* Updates, only shown when they are available. Will list how many (courtesy of [waybar-module-pacman-updates](https://github.com/coffebar/waybar-module-pacman-updates)) are available.
 * A menu that gives logout, shutdown, reboot, hibernate and suspend options.
 
 # Chrome notifications, how to prevent them take up a whole window

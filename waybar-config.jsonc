@@ -8,7 +8,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-	"custom/archicon",
+	//"custom/archicon",
         "hyprland/workspaces",
         "hyprland/mode",
 	"custom/weather",
@@ -30,7 +30,9 @@
 	"custom/keyboard-layout",
         //"battery",
         //"battery#bat2",
+	"custom/temperature",
         "clock",
+	"custom/updates",
         "custom/power"
     ],
 
@@ -40,6 +42,10 @@
     "interval": 60,
     "exec": "wttrbar",
     "return-type": "json"
+   },
+   "custom/temperature": {
+	   "format": "{}",
+	   "exec": "$HOME/GitHub/mine/config/hyprland-configs/temperature"
    },
    "network": {
 	   "interface": "enp24s0",
@@ -90,6 +96,16 @@
 			"power_menu.xml": "gvim ~/.config/waybar/power_menu.xml"
 		}
     },
+    "custom/updates": {
+    "format": "{}{icon}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": " 󱍷",
+        "updated": ""
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --no-zero-output"
+},
     "custom/wallpaper-no": {
       "exec": "$HOME/GitHub/mine/config/hyprland-configs/no-wallpapers",
       "format": "󰸉 {}",                      // Nerd Font “wallpaper” icon
