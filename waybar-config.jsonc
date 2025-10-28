@@ -106,7 +106,9 @@
     },
     "custom/wallpaper-rm": {
 	    "format": "󰆴",
-	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper-rm"
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper-rm",
+	    "tooltip": true,
+	    "tooltip-format": "Remove currently displayed wallpaper and move onto next wallpaper (Win+Shift+d)."
     },
     "custom/wallpaper-previous": {
 	    "format": "",
