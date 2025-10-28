@@ -8,4 +8,4 @@ find /usr/share/antergos/wallpapers \
      "$HOME/Pictures/Wallpapers" \
      -type f \( -iname '*.*g' \) \
      2>/dev/null | nl > ~/.cache/wallpapers-list
-vim $HOME/.cache/wallpapers-list
+vim $HOME/.cache/wallpapers-list +$($HOME/GitHub/mine/config/hyprland-configs/no-wallpapers | cut -d '/' -f 1)
