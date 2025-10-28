@@ -80,9 +80,11 @@
     },
     "custom/updates": {
 	    "format": "󰚰 {}",
-	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/updates number",
+	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/updates",
 	    "tooltip": true,
-	    "tooltip-format": "Number of available updates."
+	    "tooltip-format": "Number of available updates.",
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/update",
+	    "interval": 1
     },
     "custom/archicon": {
 	"format": "",
