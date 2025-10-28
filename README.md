@@ -122,6 +122,7 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Tab</kbd>                                     | Open Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Return</kbd>                                  | Open Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>b</kbd>                      | Open bluetooth manager |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>d</kbd>                      | Delete current wallpaper and load next one. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd>                      | Exit Hyprland. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>f</kbd>                      | Open Facebook Chrome app |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>i</kbd>                      | Open Instagram Chrome app |

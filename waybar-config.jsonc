@@ -106,7 +106,7 @@
     },
     "custom/wallpaper-rm": {
 	    "format": "󰆴",
-	    "on-click": "sudo rm $(cat $HOME/.cache/wallpaper-name) && $HOME/GitHub/mine/config/hyprland-configs/wallpaper reload"
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper-rm"
     },
     "custom/wallpaper-previous": {
 	    "format": "",

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo rm $(cat $HOME/.cache/wallpaper-name) && $HOME/GitHub/mine/config/hyprland-configs/wallpaper reload
