@@ -16,6 +16,7 @@
 	"pulseaudio",
 	"custom/temperature",
 	"custom/wallpaper-no",
+	"custom/wallpaper-rm",
 	"custom/wallpaper-previous",
 	"custom/wallpaper-random",
 	"custom/wallpaper-next"
@@ -102,6 +103,10 @@
       "interval": 1,                         // Don’t poll or update automatically
       "on-click": "alacritty -e $HOME/GitHub/mine/config/hyprland-configs/list-wallpapers"
 
+    },
+    "custom/wallpaper-rm": {
+	    "format": "󰆴",
+	    "on-click": "sudo rm $(cat $HOME/.cache/wallpaper-name) && $HOME/GitHub/mine/config/hyprland-configs/wallpaper reload"
     },
     "custom/wallpaper-previous": {
 	    "format": "",

@@ -53,6 +53,9 @@ elif `echo "$1" | grep "[rR]andom" &> /dev/null `; then
 	NEXT_INDEX=$(( RANDOM % no + 1 ))
 	echo "$NEXT_INDEX" > "$STATE_FILE"
 	WALL="${WALLS[$NEXT_INDEX]}"
+elif `echo "$1" | grep "[rR]eload" &> /dev/null`; then
+	NEXT_INDEX=$(<"$STATE_FILE")
+	WALL="${WALLS[$NEXT_INDEX]}"
 else
 	echo "Invalid argument given to wallpaper. Must be random, Random, systematic or Systematic!"
 	exit 1

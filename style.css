@@ -143,7 +143,7 @@ window#waybar.hidden {
 	background-color: #004444;
 	color: #ffffff;
 }
-#custom-wallpaper-no, #custom-wallpaper-previous, #custom-wallpaper-random, #custom-wallpaper-next, #custom-temperature {
+#custom-wallpaper-no, #custom-wallpaper-rm, #custom-wallpaper-previous, #custom-wallpaper-random, #custom-wallpaper-next, #custom-temperature {
   border-radius: 4px;
   margin: 6px 1px;
   padding: 3px 3px;
@@ -151,9 +151,14 @@ window#waybar.hidden {
 }
 
 #custom-wallpaper-no {
-	  background-color: #ff66bb;
+	  /*background-color: #ff66bb;*/
+	background-color: #00ffcc;
 }
 
+#custom-wallpaper-rm {
+	background-color: #aa0000;
+	color: #ffffff;
+}
 #custom-wallpaper-previous {
 	background-color: #99ffff;
 }
