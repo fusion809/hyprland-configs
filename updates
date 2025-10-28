@@ -3,5 +3,6 @@ if `which pacman &> /dev/null`; then
 	list=$(sudo pacman -Syup | grep -v "core \|extra \|multilib \|testing.* \|Synchronizing" | cut -d '/' -f 8)
 	no=$(echo $list | grep -v '^[[:space:]]*$' | wc -l)
 fi
-
-echo "$no"
+if [[ $no -gt 0 ]]; then
+	echo "󰚰 $no"
+fi

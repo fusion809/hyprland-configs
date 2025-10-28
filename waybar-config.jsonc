@@ -15,6 +15,7 @@
 	"custom/keyboard-layout",
 	"pulseaudio",
 	"custom/temperature",
+	"custom/updates",
 	"custom/wallpaper-no",
 	"custom/wallpaper-rm",
 	"custom/wallpaper-previous",
@@ -30,7 +31,6 @@
         "cpu",
         "memory",
         "clock",
-	"custom/updates",
         "custom/power"
     ],
 
