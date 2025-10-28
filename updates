@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+if `which pacman &> /dev/null`; then
+	list=$(sudo pacman -Syup | grep -v "core \|extra \|multilib \|testing.* \|Synchronizing" | cut -d '/' -f 8)
+	no=$(echo $list | wc -l)
+fi
+
+if `echo "$1" | grep "[nN]umber" &> /dev/null`; then
+	echo "$no"
+else
+	echo "$list"
+fi

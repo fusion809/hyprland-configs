@@ -30,6 +30,7 @@
         "cpu",
         "memory",
         "clock",
+	"custom/updates",
         "custom/power"
     ],
 
@@ -76,6 +77,12 @@
              "focused": " ",
              "default": " "
          }
+    },
+    "custom/updates": {
+	    "format": "󰚰 {}",
+	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/updates number",
+	    "tooltip": true,
+	    "tooltip-format": "Number of available updates."
     },
     "custom/archicon": {
 	"format": "",
