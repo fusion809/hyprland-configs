@@ -71,5 +71,7 @@ echo $WALL > ~/.cache/wallpaper-name
 #	sleep 0.2   # small delay so preload completes
 #	hyprctl swaybg wallpaper ",$WALL"
 #else
+	time=$(date)
 	swaybg -i "$WALL" &
+	killall -o $time swaybg
 #fi
