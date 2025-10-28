@@ -3,12 +3,12 @@
 
 # Directories to search
 DIRS=(
-    "$HOME/Pictures/Wallpapers"
+    "/usr/share/antergos/wallpapers"
     "/usr/share/backgrounds"
     "/usr/share/wallpapers"
-    "/usr/share/antergos/wallpapers"
     "$HOME/.local/share/wallpapers"
     "$HOME/.local/share/backgrounds"
+    "$HOME/Pictures/Wallpapers"
 )
 
 echo "Setting = $1"
