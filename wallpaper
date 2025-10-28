@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Cycles through wallpapers from multiple directories for Hyprpaper
-
 # Directories to search
 DIRS=(
     "/usr/share/antergos/wallpapers"
@@ -62,16 +61,16 @@ else
 fi
 touch ~/.cache/wallpaper-name
 echo $WALL > ~/.cache/wallpaper-name
-# Apply wallpaper
-#if ! `pgrep -x "niri" &> /dev/null`; then
-#	if ! `pgrep -x "swaybg" &> /dev/null`; then
-#		swaybg &
-#	fi
-#	hyprctl swaybg preload "$WALL"
-#	sleep 0.2   # small delay so preload completes
-#	hyprctl swaybg wallpaper ",$WALL"
-#else
-	time=$(date)
-	swaybg -i "$WALL" &
-	killall -o $time swaybg
-#fi
+#!/usr/bin/env bash
+function killOldSwayBg {
+	noSwaybg=$(ps ax | grep swaybg | grep -v grep | wc -l)
+	swayBg=$(ps ax | grep swaybg | grep -v grep | head -n $(($noSwaybg-1)) | sed 's/[a-z].*//g' | tr '\n' ' ' | sed 's/\s*$//g' | sed 's/  / /g')
+	if ! [[ $swayBg =~ ^[[:space:]]*$ ]]; then
+		kill -9 $swayBg
+	else
+		echo "There are no old swaybg processes to kill"
+	fi
+}
+
+killOldSwayBg
+swaybg -i "$WALL" &
