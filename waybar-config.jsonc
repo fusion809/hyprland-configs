@@ -32,7 +32,6 @@
         //"battery#bat2",
 	"custom/temperature",
         "clock",
-	"custom/updates",
         "custom/power"
     ],
 
@@ -96,16 +95,6 @@
 			"power_menu.xml": "gvim ~/.config/waybar/power_menu.xml"
 		}
     },
-    "custom/updates": {
-    "format": "{}{icon}",
-    "return-type": "json",
-    "format-icons": {
-        "has-updates": " 󱍷",
-        "updated": ""
-    },
-    "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --no-zero-output"
-},
     "custom/wallpaper-no": {
       "exec": "$HOME/GitHub/mine/config/hyprland-configs/no-wallpapers",
       "format": "󰸉 {}",                      // Nerd Font “wallpaper” icon
