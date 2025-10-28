@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+find /usr/share/backgrounds \
+     /usr/share/wallpapers \
+     /usr/share/Wallpapers \
+     /usr/share/antergos/wallpapers \
+     "$HOME/Pictures/Wallpapers" \
+     "$HOME/.local/share/backgrounds" \
+     "$HOME/.local/share/wallpapers" \
+     -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.bmp' -o -iname '*.svg' \) \
+     2>/dev/null | nl | less -R

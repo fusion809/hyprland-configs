@@ -44,7 +44,9 @@
    },
    "custom/temperature": {
 	   "format": "{}",
-	   "exec": "$HOME/GitHub/mine/config/hyprland-configs/temperature"
+	   "exec": "$HOME/GitHub/mine/config/hyprland-configs/temperature",
+	   "on-click": "alacritty -e s-tui",
+	   "interval": 1
    },
    "network": {
 	   "interface": "enp24s0",
@@ -100,7 +102,8 @@
       "format": "󰸉 {}",                      // Nerd Font “wallpaper” icon
       "tooltip": true,
       "tooltip-format": "Wallpaper: number selected/total number",
-      "interval": 1                           // Don’t poll or update automatically
+      "interval": 1,                         // Don’t poll or update automatically
+      "on-click": "alacritty -e $HOME/GitHub/mine/config/hyprland-configs/list-wallpapers"
 
     },
     "custom/wallpaper-previous": {
