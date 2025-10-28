@@ -12,6 +12,9 @@
         "hyprland/workspaces",
         "hyprland/mode",
 	"custom/weather",
+	"custom/keyboard-layout",
+	"pulseaudio",
+	"custom/temperature",
 	"custom/wallpaper-no",
 	"custom/wallpaper-previous",
 	"custom/wallpaper-random",
@@ -21,16 +24,10 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "pulseaudio",
 	"disk",
 	"network",
         "cpu",
         "memory",
-        "backlight",
-	"custom/keyboard-layout",
-        //"battery",
-        //"battery#bat2",
-	"custom/temperature",
         "clock",
         "custom/power"
     ],
