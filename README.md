@@ -24,6 +24,7 @@ The waybar has the following components:
 * CPU usage percentage.
 * RAM usage percentage.
 * Keyboard layout (just the two-letter initial though). 
+* Temperature according to sensors.
 * Clock with AM/PM time with seconds, short day of the week name, day of the month/month of the year/year (short format). 
 * Updates, only shown when they are available. Will list how many (courtesy of [waybar-module-pacman-updates](https://github.com/coffebar/waybar-module-pacman-updates)) are available.
 * A menu that gives logout, shutdown, reboot, hibernate and suspend options.
