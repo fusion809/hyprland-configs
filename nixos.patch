@@ -1,0 +1,69 @@
+diff --git a/hyprland.conf b/hyprland.conf
+index bbc56e9..2d70ce7 100644
+--- a/hyprland.conf
++++ b/hyprland.conf
+@@ -233,10 +233,10 @@ windowrulev2 = float, initialClass:kitty
+ windowrulev2 = size 964 400, initialClass:kitty
+ windowrulev2 = move 955 679, initialClass:kitty
+ windowrulev2 = workspace 1, initialClass:google-chrome
+-windowrulev2 = workspace 1, initialClass:^VirtualBox.*$
+-windowrulev2 = workspace 1, initialClass:brave-browser
++windowrulev2 = workspace 7, initialClass:^virt-manager.*$
++windowrulev2 = workspace 6, initialClass:brave-browser
+ windowrulev2 = workspace 1, initialClass:gcr-prompter
+-windowrulev2 = workspace 1, initialClass:org.gnome.TextEditor
++windowrulev2 = workspace 7, initialClass:org.gnome.TextEditor
+ windowrulev2 = workspace 3, initialClass:blueman-manager
+ windowrulev2 = workspace 4, initialClass:winboat
+ windowrulev2 = workspace 5, initialClass:xfreerdp
+diff --git a/keyboard-layout b/keyboard-layout
+index 5b833b7..28eab31 100755
+--- a/keyboard-layout
++++ b/keyboard-layout
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/usr/bin/env bash
+ # This is courtesy of ChatGPT
+ current_layout=$(hyprctl devices -j | jq -r '
+   .keyboards[]
+diff --git a/no-wallpapers b/no-wallpapers
+index 5d14038..a802a46 100755
+--- a/no-wallpapers
++++ b/no-wallpapers
+@@ -1,9 +1,9 @@
+ #!/usr/bin/env bash
+-root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" -type f | wc -l) ; 
+-rootant=$(find /usr/share/antergos/wallpapers -name "*.*g" -type f | wc -l);
++root=$(find /arch/usr/share/{backgrounds,[wW]allpapers} -name "*.*g" -type f | wc -l) ; 
++rootant=$(find /arch/usr/share/antergos/wallpapers -name "*.*g" -type f | wc -l);
+ root=$(($root+$rootant))
+-userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
+-userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f | wc -l);
++userpi=$(find /arch/$HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
++userls=$(find /arch/$HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f | wc -l);
+ user=$(($userpi+$userls))
+ no=$(($root+$user))
+ #curr=$(cat $HOME/.cache/swaybg-wallstate)
+diff --git a/wallpaper b/wallpaper
+index 8f1c6fb..ba9440e 100755
+--- a/wallpaper
++++ b/wallpaper
+@@ -3,12 +3,12 @@
+ 
+ # Directories to search
+ DIRS=(
+-    "$HOME/Pictures/Wallpapers"
+-    "/usr/share/backgrounds"
+-    "/usr/share/wallpapers"
+-    "/usr/share/antergos/wallpapers"
+-    "$HOME/.local/share/wallpapers"
+-    "$HOME/.local/share/backgrounds"
++    "/arch/$HOME/Pictures/Wallpapers"
++    "/arch/usr/share/backgrounds"
++    "/arch/usr/share/wallpapers"
++    "/arch/usr/share/antergos/wallpapers"
++    "/arch/$HOME/.local/share/wallpapers"
++    "/arch/$HOME/.local/share/backgrounds"
+ )
+ 
+ echo "Setting = $1"
