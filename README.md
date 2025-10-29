@@ -123,6 +123,26 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Space</kbd>                                   | Change keyboard (between US and Brazilian Portuguese). |
 | <kbd>Win</kbd>+<kbd>Tab</kbd>                                     | Open Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Return</kbd>                                  | Open Alacritty terminal. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>1</kbd>                        | Move focus to tab 1. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>2</kbd>                        | Move focus to tab 2. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>3</kbd>                        | Move focus to tab 3. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>4</kbd>                        | Move focus to tab 4. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>5</kbd>                        | Move focus to tab 5. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>6</kbd>                        | Move focus to tab 6. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>7</kbd>                        | Move focus to tab 7. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>8</kbd>                        | Move focus to tab 8. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>9</kbd>                        | Move focus to tab 9. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>0</kbd>                        | Move focus to tab 10. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>                       | Move focus to tab 11. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F2</kbd>                       | Move focus to tab 12. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F3</kbd>                       | Move focus to tab 13. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd>                       | Move focus to tab 14. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>                       | Move focus to tab 15. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F6</kbd>                       | Move focus to tab 16. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F7</kbd>                       | Move focus to tab 17. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F8</kbd>                       | Move focus to tab 18. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F9</kbd>                       | Move focus to tab 19. |
+| <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F10</kbd>                      | Move focus to tab 20. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>b</kbd>                      | Open bluetooth manager |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>d</kbd>                      | Delete current wallpaper and load next one. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd>                      | Exit Hyprland. |
