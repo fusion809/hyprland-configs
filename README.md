@@ -16,7 +16,7 @@ The waybar has the following components:
 * Keyboard layout (just the two-letter initial though). 
 * Pulseaudio showing the volume of your output audio device.
 * Temperature according to sensors.
-* Number of package updates available; only shown if the number is greater than 0.
+* Whether updates are available; only shown if updates are available.
 * Wallpaper number widget: it displays the number of the wallpaper most recently displayed on your desktop, then a forward slash, and then the total number of wallpapers you have installed on your system.
 * A bin icon that, when clicked, will delete your current wallpaper and load the next wallpaper.
 * A left arrow that, when clicked, changes your wallpaper to the previous one in your collection (keeping in mind, this is when you're using the systematic algorithm for the wallpaper script).

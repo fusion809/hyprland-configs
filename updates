@@ -4,5 +4,5 @@ if `which pacman &> /dev/null`; then
 	no=$(echo $list | grep -v '^[[:space:]]*$' | wc -l)
 fi
 if [[ $no -gt 0 ]]; then
-	echo "󰚰 $no"
+	echo "󰚰"
 fi
