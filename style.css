@@ -140,8 +140,10 @@ window#waybar.hidden {
 }
 
 #window {
-	background-color: #004444;
-	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
 }
 #custom-wallpaper-no, #custom-wallpaper-rm, #custom-wallpaper-previous, #custom-wallpaper-random, #custom-wallpaper-next, #custom-temperature {
   border-radius: 4px;

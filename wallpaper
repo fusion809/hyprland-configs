@@ -61,7 +61,6 @@ else
 fi
 touch ~/.cache/wallpaper-name
 echo $WALL > ~/.cache/wallpaper-name
-#!/usr/bin/env bash
 function killOldSwayBg {
 	noSwaybg=$(ps ax | grep swaybg | grep -v grep | wc -l)
 	swayBg=$(ps ax | grep swaybg | grep -v grep | head -n $(($noSwaybg-1)) | sed 's/[a-z].*//g' | tr '\n' ' ' | sed 's/\s*$//g' | sed 's/  / /g')
