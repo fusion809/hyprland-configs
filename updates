@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if `which pikaur &> /dev/null`; then
-	list=$(pikaur -Syup 2>&1 | grep -v "core \|extra \|multilib \|testing.* \|Synchronizing\|Reading \|Starting\|" | cut -d '/' -f 8)
+	list=$(sudo pacman -Syup | grep -v "core \|extra \|multilib \|testing.* \|Synchronizing" | cut -d '/' -f 8)
 	no=$(echo $list | grep -v '^[[:space:]]*$' | wc -l)
 fi
 if [[ $no -gt 0 ]]; then
