@@ -16,6 +16,7 @@
 	"pulseaudio",
 	"custom/temperature",
 	"custom/updates",
+	"custom/notifications",
 	"custom/wallpaper-no",
 	"custom/wallpaper-rm",
 	"custom/wallpaper-previous",
@@ -136,6 +137,26 @@
 	    "tooltip": true,
 	    "tooltip-format": "Next wallpaper. Win+w achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic next"
+    },
+    "custom/notification": {
+    	"tooltip": true,
+    	"format": "{icon}",
+    	"format-icons": {
+      		"notification": "󱅫",
+      		"none": "󰂜",
+      		"dnd-notification": "󰂠",
+      		"dnd-none": "󰪓",
+      		"inhibited-notification": "󰂛",
+      		"inhibited-none": "󰪑",
+         "dnd-inhibited-notification": "󰂛",
+         "dnd-inhibited-none": "󰪑"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
     },
     "custom/bluetooth-connect": {
       "format": "",
