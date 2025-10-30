@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-rootant=$(find /usr/share/antergos/wallpapers -name "*.*g" -type f | wc -l);
-root=$(find /usr/share/{backgrounds,[wW]allpapers} -name "*.*g" -type f | wc -l) ; 
+rootant=$(find /arch/usr/share/antergos/wallpapers -name "*.*g" -type f | wc -l);
+root=$(find /arch/usr/share/{backgrounds,[wW]allpapers} -name "*.*g" -type f | wc -l) ; 
 root=$(($root+$rootant))
-userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f | wc -l);
-userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
+userls=$(find /arch$HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f | wc -l);
+userpi=$(find /arch$HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
 user=$(($userpi+$userls))
 no=$(($root+$user))
 #curr=$(cat $HOME/.cache/swaybg-wallstate)
 # Define the two possible files
-f1="$HOME/.cache/swaybg-wallstate"
-f2="$HOME/.cache/swaybg-wallstate-random"
+f1="/arch$HOME/.cache/swaybg-wallstate"
+f2="/arch$HOME/.cache/swaybg-wallstate-random"
 
 # Find the most recently modified of the two
 latest=$(ls -t "$f1" "$f2" 2>/dev/null | head -n1)
