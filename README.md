@@ -102,6 +102,7 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>b</kbd>                                       | Open Brave. |
 | <kbd>Win</kbd>+<kbd>c</kbd>                                       | Open Google Chat Chrome app |
 | <kbd>Win</kbd>+<kbd>d</kbd>                                       | Open rofi dmenu            |
+| <kbd>Win</kbd>+<kbd>e</kbd>                                       | Delete currently shown wallpaper and show next one. |
 | <kbd>Win</kbd>+<kbd>m</kbd>                                       | Open WhatsApp web |
 | <kbd>Win</kbd>+<kbd>f</kbd>                                       | Set window to full screen. | 
 | <kbd>Win</kbd>+<kbd>g</kbd>                                       | Launch gtop in Alacritty. |
@@ -144,10 +145,10 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F9</kbd>                       | Move focus to tab 19. |
 | <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F10</kbd>                      | Move focus to tab 20. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>b</kbd>                      | Open bluetooth manager |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>d</kbd>                      | Delete current wallpaper and load next one. | 
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>d</kbd>                      | Launch Duoingo app. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd>                      | Exit Hyprland. |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>f</kbd>                      | Open Facebook Chrome app |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>i</kbd>                      | Open Instagram Chrome app |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>f</kbd>                      | Open Facebook Chrome app. |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>i</kbd>                      | Open Instagram Chrome app. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>j</kbd>                      | Move window left (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>k</kbd>                      | Move window down (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>l</kbd>                      | Move window up (not including tabbed windows). |
