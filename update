@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-if `which pacman &> /dev/null`; then
-	alacritty -e $HOME/GitHub/mine/config/hyprland-configs/update_func
-fi

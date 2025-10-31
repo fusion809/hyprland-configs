@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-if `which pikaur &> /dev/null`; then
-	list=$(sudo pacman -Syup | grep -v "core \|extra \|multilib \|testing.* \|Synchronizing" | cut -d '/' -f 8)
-	no=$(echo $list | grep -v '^[[:space:]]*$' | wc -l)
-fi
-if [[ $no -gt 0 ]]; then
-	echo "󰚰"
-fi
