@@ -10,6 +10,7 @@
     "modules-left": [
 	//"custom/archicon",
 	"custom/nixosicon",
+	"custom/updates",
         "hyprland/workspaces",
         "hyprland/mode",
 	"custom/weather",
@@ -90,6 +91,11 @@
 			"nixosconfigs": "code $HOME/NixOS-configs",
 			"hyprlandconfigs": "code $HOME/GitHub/mine/config/hyprland-configs"
 		}
+    },
+    "custom/updates": {
+	    "format": "{}",
+	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/updates",
+	    "on-click": "$HOME/Github/mine/config/hyprland-configs/update"
     },
     "custom/wallpaper-no": {
       "exec": "$HOME/GitHub/mine/config/hyprland-configs/no-wallpapers",

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if `mountpoint -q /arch/boot`; then
+	sudo umount -l /arch/boot
+	sudo umount -l /arch
+fi
+sudo nixos-rebuild switch --upgrade -I nixos-config=/etc/nixos/configuration.nix
+sudo mount /dev/disk/by-label/arch /arch
+sudo mount /dev/disk/by-label/ARCHEFI /arch/boot

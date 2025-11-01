@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+local current_generation=$(nixos-rebuild dry-run 2>&1 | grep 'current system generation' | cut -d ' ' -f 5)
+local new_generation=$(nixos-rebuild dry-run 2>&1 | grep 'new system generation' | cut -d ' ' -f 5)
+        
+if [[ "$current_generation" != "$new_generation" ]]; then
+	echo "󰚰"
+fi
