@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This is courtesy of ChatGPT
-current_layout=$(hyprctl devices -j | jq -r '
+current_layout_name=$(hyprctl devices -j | jq -r '
   .keyboards[]
   | select(.main == true)
-  | ( if (.layout | type) == "array" then .layout else (.layout // "" | split(",")) end ) as $layouts
-  | ($layouts[(.active_layout_index // 0)] // "")
+  | .active_keymap
 ')
+current_layout=$(grep --include="*" -R "name\[Group1\]=\s*\"$current_layout_name\"" /run/current-system/sw/share/X11/xkb/symbols | cut -d ':' -f 1 | cut -d '/' -f 9 | uniq)
 echo $current_layout
