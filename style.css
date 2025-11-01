@@ -54,7 +54,6 @@ window#waybar.hidden {
   background-color: #f38ba8;
 }
 
-#memory,
 #custom-power,
 #battery,
 #backlight,
@@ -69,10 +68,18 @@ window#waybar.hidden {
   background-color: #1e1e2e;
   color: #000000;
 }
+#memory {
+  border-radius: 4px;
+  margin: 6px 1px;
+  padding-right: 6px;
+  background-color: #ffff44;
+  color: #000000;
+}
 
 #disk {
   background-color: #a5f55f;
   color: black;
+  padding-right: 3px;
 }
 #tray {
   border-radius: 4px;
@@ -95,7 +102,7 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
-#memory, #cpu, #window {
+#cpu, #window {
   border-radius: 4px;
   margin: 6px 1px;
   padding: 3px 3px;
@@ -127,12 +134,8 @@ window#waybar.hidden {
 	color: white;
 	background-color: #a900a9;
 }
-#memory, #cpu {
+#cpu {
   color: #000000;
-}
-
-#memory {
-  background-color: #ffff44;
 }
 
 #cpu {
@@ -213,6 +216,7 @@ window#waybar.hidden {
 #clock {
   font-family: JetBrainsMono Nerd Font;
   background-color: #1144aa;
+  padding-right: 3px;
   /*font-weight: bold;*/
   color: #ffffff;
 }
