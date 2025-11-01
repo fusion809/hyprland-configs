@@ -106,7 +106,7 @@ window#waybar.hidden {
   padding-right: 6px;
 }
 
-#custom-archicon, #custom-updates, #custom-bluetooth-connect, #custom-weather, #custom-keyboard-layout {
+#custom-nixosicon, #custom-updates, #custom-bluetooth-connect, #custom-weather, #custom-keyboard-layout {
 	border-radius: 4px;
 	margin: 6px 1px;
 	padding: 3px 3px;
@@ -121,9 +121,10 @@ window#waybar.hidden {
 	color: #0000ff;
 }
 
-#custom-archicon, #custom-updates {
-	background-color: #4488cc;
-	color: #ffffff;
+#custom-nixosicon, #custom-updates {
+	background-color: rgba(20, 20, 20, 1.0);
+	font-weight: bold;
+	color: rgba(190, 190, 255, 1.0);
 	padding-right: 6px;
 }
 

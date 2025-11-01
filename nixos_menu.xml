@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+    <child>
+	<object class="GtkMenuItem" id="wiki">
+			<property name="label">NixOS Wiki</property>
+        </object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="nixpkgs">
+			<property name="label">NixOS packages search</property>
+        </object>
+	</child>
+	<child>
+		<object class="GtkMenuItem" id="options">
+			<property name="label">NixOS options search</property>
+		</object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="hyprlandconfigs">
+			<property name="label">Edit hyprland configs</property>
+        </object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="nixosconfigs">
+			<property name="label">Edit NixOS-configs</property>
+        </object>
+	</child>
+  </object>
+</interface>

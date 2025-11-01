@@ -9,6 +9,7 @@
     // Choose the order of the modules
     "modules-left": [
 	//"custom/archicon",
+	"custom/nixosicon",
         "hyprland/workspaces",
         "hyprland/mode",
 	"custom/weather",
@@ -77,22 +78,17 @@
              "default": " "
          }
     },
-    "custom/archicon": {
-	"format": "",
+    "custom/nixosicon": {
+	"format": "",
 		"tooltip": false,
 		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/arch_menu.xml", // Menu file in resources folder
+		"menu-file": "$HOME/GitHub/mine/config/hyprland-configs/nixos_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"wiki": "xdg-open https://wiki.archlinux.org",
-			"aur": "xdg-open https://aur.archlinux.org",
-			"readme": "cd $HOME/GitHub/mine/config/hyprland-configs ; marked -o README.html -i README.md ; google-chrome-stable README.html",
-			"hyprland.conf": "gvim ~/.config/hypr/hyprland.conf",
-			"kitty.conf": "gvim ~/.config/kitty/kitty.conf",
-			"alacritty.toml": "gvim ~/.config/alacritty/alacritty.toml",
-			"config.jsonc": "gvim ~/.config/waybar/config.jsonc",
-			"style.css": "gvim ~/.config/waybar/style.css",
-			"arch_menu.xml": "gvim ~/.config/waybar/arch_menu.xml",
-			"power_menu.xml": "gvim ~/.config/waybar/power_menu.xml"
+			"wiki": "xdg-open https://wiki.nixos.org",
+			"nixpkgs": "xdg-open https://search.nixos.org/packages",
+			"options": "xdg-open https://search.nixos.org/options",
+			"nixosconfigs": "code $HOME/NixOS-configs",
+			"hyprlandconfigs": "code $HOME/GitHub/mine/config/hyprland-configs"
 		}
     },
     "custom/wallpaper-no": {
