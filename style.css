@@ -168,6 +168,7 @@ window#waybar.hidden {
 }
 #custom-wallpaper-previous {
 	background-color: #99ffff;
+	padding-right: 6px;
 }
 #custom-wallpaper-random {
 	background-color: #ff9955;
@@ -175,6 +176,7 @@ window#waybar.hidden {
 }
 #custom-wallpaper-next {
 	background-color: #99ff99;
+	padding-right: 6px;
 }
 
 #pulseaudio {
