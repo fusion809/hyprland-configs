@@ -1,16 +1,16 @@
 # My Hyprland configuration files
-![Hyprland on Arch screenshot as of 29 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_2025-10-29.png)
+![Hyprland on NixOS screenshot as of 29 October 2025](https://fusion809.github.io/images/Hyprland/Hyprland_NixOS_2025-11-02.png)
 
-**Figure 1: Hyprland Arch Linux configuration as of 29 October 2025.**
+**Figure 1: Hyprland NixOS configuration as of 2 November 2025.**
 
-This repository contains my [Hyprland](https://wiki.archlinux.org/title/Hyprland) configuration files. 
+This repository contains my [Hyprland](https://wiki.nixos.org/wiki/Hyprland) configuration files. 
 
 # Installation
 To install these scripts, run the `install.sh` script. It merely gets the repo, sets up appropriate symlinks and installs some required packages. 
 
 # Waybar
 The waybar has the following components:
-<!--* The Arch menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.-->
+<!--* The NixOS menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.-->
 * Workspaces.
 * Weather conditions, obtained by wttr.in. Beware that wttr.in can be quite unreliable at times.
 * Keyboard layout (just the two-letter initial though). 
@@ -164,3 +164,5 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Right</kbd>                  | Move window right (tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd>                 | Open workspace of Alacritty terminal. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>                  | Toggle float of focused window. | 
+
+
