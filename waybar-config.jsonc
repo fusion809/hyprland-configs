@@ -88,7 +88,7 @@
 			"wiki": "xdg-open https://wiki.nixos.org",
 			"nixpkgs": "xdg-open https://search.nixos.org/packages",
 			"options": "xdg-open https://search.nixos.org/options",
-			"nixosconfigs": "code $HOME/NixOS-configs",
+			"nixosconfigs": "code $HOME/GitHub/mine/config/NixOS-configs",
 			"hyprlandconfigs": "code $HOME/GitHub/mine/config/hyprland-configs"
 		}
     },
