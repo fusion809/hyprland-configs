@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-if `which pacman &> /dev/null`; then
-	list=$(sudo pacman -Syup | grep -v "core \|extra \|multilib \|testing.* \|Synchronizing" | cut -d '/' -f 8)
+if `which turbo &> /dev/null`; then
+	list=$(turbo -P | grep -v "No.*packages" | grep -v "Update:" | grep -v "^$" | grep -v "json")
 	no=$(echo $list | grep -v '^[[:space:]]*$' | wc -l)
 fi
 if [[ $no -gt 0 ]]; then
