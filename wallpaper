@@ -31,7 +31,7 @@ if [[ ${#WALLS[@]} -eq 0 ]]; then
 fi
 no="${#WALLS[@]}"
 # File to remember last wallpaper
-STATE_FILE="$HOME/.cache/swaybg-wallstate"
+STATE_FILE="/arch$HOME/.cache/swaybg-wallstate"
 if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 	# Get index of next wallpaper
 	if [[ -f "$STATE_FILE" ]]; then
