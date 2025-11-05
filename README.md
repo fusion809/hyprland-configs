@@ -10,7 +10,7 @@ To install these scripts, run the `install.sh` script. It merely gets the repo, 
 
 # Waybar
 The waybar has the following components:
-<!--* The NixOS menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.-->
+* The NixOS menu which gives you options for opening up the NixOS packages search, NixOS options search, NixOS Wiki and Nerd font cheat sheet websites in the default browser, and the option to open NixOS-configs and Hyprland-configs in default code editor.
 * Workspaces.
 * Weather conditions, obtained by wttr.in. Beware that wttr.in can be quite unreliable at times.
 * Keyboard layout (just the two-letter initial though). 
@@ -144,14 +144,20 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F8</kbd>                       | Move focus to tab 18. |
 | <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F9</kbd>                       | Move focus to tab 19. |
 | <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>F10</kbd>                      | Move focus to tab 20. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>f</kbd>                      | Open nerd fonts cheat sheet webpage in browser. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>o</kbd>                      | Open NixOS options search webpage in browser. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>p</kbd>                      | Open NixOS packages search webpage in browser. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>w</kbd>                      | Open NixOS Wiki webpage in browser. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>b</kbd>                      | Open bluetooth manager |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>d</kbd>                      | Launch Duoingo app. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd>                      | Exit Hyprland. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>f</kbd>                      | Open Facebook Chrome app. |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>h</kbd>                      | Edit Hyprland configuration files. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>i</kbd>                      | Open Instagram Chrome app. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>j</kbd>                      | Move window left (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>k</kbd>                      | Move window down (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>l</kbd>                      | Move window up (not including tabbed windows). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>n</kbd>                      | Edit NixOS configuration files. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Open file manager (Nautilus). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>q</kbd>                      | Open Quora Chrome app |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                      | Enter window resizing mode. | 

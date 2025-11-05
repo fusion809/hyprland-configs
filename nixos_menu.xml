@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <object class="GtkMenu" id="menu">
-    <child>
-	<object class="GtkMenuItem" id="wiki">
-			<property name="label">NixOS Wiki</property>
-        </object>
-	</child>
 	<child>
-        <object class="GtkMenuItem" id="nixpkgs">
-			<property name="label">NixOS packages search</property>
+        <object class="GtkMenuItem" id="nerdfonts">
+			<property name="label"> Nerd fonts cheat sheet (Win+Ctrl+f)</property>
         </object>
 	</child>
 	<child>
 		<object class="GtkMenuItem" id="options">
-			<property name="label">NixOS options search</property>
+			<property name="label">󰘵 NixOS options search (Win+Ctrl+o)</property>
 		</object>
 	</child>
 	<child>
+        <object class="GtkMenuItem" id="nixpkgs">
+			<property name="label">󰏖 NixOS packages search (Win+Ctrl+p)</property>
+        </object>
+	</child>
+	<child>
+		<object class="GtkMenuItem" id="wiki">
+			<property name="label">󰖬 NixOS Wiki (Win+Ctrl+w)</property>
+        </object>
+	</child>
+	<child>
         <object class="GtkMenuItem" id="hyprlandconfigs">
-			<property name="label">Edit hyprland configs</property>
+			<property name="label"> Edit Hyprland configuration files (Win+Shift+h)</property>
         </object>
 	</child>
 	<child>
         <object class="GtkMenuItem" id="nixosconfigs">
-			<property name="label">Edit NixOS-configs</property>
+			<property name="label"> Edit NixOS configuration files (Win+Shift+n)</property>
         </object>
 	</child>
   </object>
