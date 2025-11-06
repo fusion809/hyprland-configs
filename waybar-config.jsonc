@@ -11,8 +11,8 @@
 	//"custom/archicon",
 	"custom/nixosicon",
 	"custom/updates",
-        "hyprland/workspaces",
-        "hyprland/mode",
+    "hyprland/workspaces",
+    "hyprland/mode",
 	"custom/weather",
 	"custom/keyboard-layout",
 	"pulseaudio",
@@ -87,7 +87,10 @@
 		"menu-actions": {
             "nerdfonts": "xdg-open https://www.nerdfonts.com/cheat-sheet",
 			"wiki": "xdg-open https://wiki.nixos.org",
-			"nixpkgs": "xdg-open https://search.nixos.org/packages",
+            "update": "$HOME/GitHub/mine/config/hyprland-configs/update",
+			"rebuild": "$HOME/GitHub/mine/config/hyprland-configs/rebuild",
+            "repair": "$HOME/GitHub/mine/config/hyprland-configs/repair",
+            "nixpkgs": "xdg-open https://search.nixos.org/packages",
 			"options": "xdg-open https://search.nixos.org/options",
 			"nixosconfigs": "code $HOME/GitHub/mine/config/NixOS-configs",
 			"hyprlandconfigs": "code $HOME/GitHub/mine/config/hyprland-configs"

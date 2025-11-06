@@ -17,6 +17,22 @@
         </object>
 	</child>
 	<child>
+		<object class="GtkMenuItem" id="rebuild">
+			<property name="label"> Rebuild NixOS (Win+Ctrl+r)</property>
+		</object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="repair">
+			<property name="label">󰁨 Repair the Nix store (Win+Ctrl+s)</property>
+        </object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="update">
+			<property name="label">󱣇 Update NixOS without store repair (Win+Ctrl+u)</property>
+        </object>
+	</child>
+
+	<child>
 		<object class="GtkMenuItem" id="wiki">
 			<property name="label">󰖬 NixOS Wiki (Win+Ctrl+w)</property>
         </object>

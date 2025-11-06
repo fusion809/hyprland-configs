@@ -10,7 +10,7 @@ To install these scripts, run the `install.sh` script. It merely gets the repo, 
 
 # Waybar
 The waybar has the following components:
-* The NixOS menu which gives you options for opening up the NixOS packages search, NixOS options search, NixOS Wiki and Nerd font cheat sheet websites in the default browser, and the option to open NixOS-configs and Hyprland-configs in default code editor.
+* The NixOS menu which gives you options for opening up the NixOS packages search, NixOS options search, NixOS Wiki and Nerd font cheat sheet websites in the default browser, rebuilding and updating one's system, repairing the Nix store, and opening NixOS-configs and Hyprland-configs in default code editor.
 * Workspaces.
 * Weather conditions, obtained by wttr.in. Beware that wttr.in can be quite unreliable at times.
 * Keyboard layout (just the two-letter initial though). 
@@ -147,6 +147,9 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>f</kbd>                      | Open nerd fonts cheat sheet webpage in browser. |
 | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>o</kbd>                      | Open NixOS options search webpage in browser. |
 | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>p</kbd>                      | Open NixOS packages search webpage in browser. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>r</kbd>                      | Rebuild NixOS. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>s</kbd>                      | Repair the Nix store. |
+| <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>u</kbd>                      | Update NixOS without repairing the Nix store. |
 | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>w</kbd>                      | Open NixOS Wiki webpage in browser. |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>b</kbd>                      | Open bluetooth manager |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>d</kbd>                      | Launch Duoingo app. |

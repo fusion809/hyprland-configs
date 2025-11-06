@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
-if `which nixos-rebuild &> /dev/null`; then
-	alacritty -e $HOME/GitHub/mine/config/hyprland-configs/update_func
-fi
+alacritty -e $HOME/GitHub/mine/config/hyprland-configs/update_func

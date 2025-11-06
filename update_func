@@ -2,7 +2,9 @@
 if `mountpoint -q /arch/boot`; then
 	sudo umount -l /arch/boot
 	sudo umount -l /arch
+	touch $HOME/.cache/umount_arch
 fi
 sudo nixos-rebuild switch --upgrade -I nixos-config=/etc/nixos/configuration.nix
+rm $HOME/.cache/umount_arch
 sudo mount /dev/disk/by-label/arch /arch
 sudo mount /dev/disk/by-label/ARCHEFI /arch/boot
