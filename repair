@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-alacritty -e "sudo nix-store --repair --verify --check-contents"
+alacritty -e $HOME/GitHub/mine/config/hyprland-configs/repair_func
