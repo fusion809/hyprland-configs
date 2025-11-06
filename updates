@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
-local current_generation=$(nixos-rebuild dry-run 2>&1 | grep 'current system generation' | cut -d ' ' -f 5)
-local new_generation=$(nixos-rebuild dry-run 2>&1 | grep 'new system generation' | cut -d ' ' -f 5)
-        
-if [[ "$current_generation" != "$new_generation" ]]; then
+#!/usr/bin/env zsh
+cd $HOME/GitHub/mine/config/NixOS-configs
+sudo nix flake update
+diffLen=$(git diff flake.lock | wc -l)
+if [[ "$diffLen" > 0 ]]; then
 	echo "󰚰"
 fi
