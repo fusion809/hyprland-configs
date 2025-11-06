@@ -121,11 +121,18 @@ window#waybar.hidden {
 	color: #0000ff;
 }
 
-#custom-nixosicon, #custom-updates {
-	background-color: rgba(20, 20, 20, 1.0);
+#custom-nixosicon {
+	background-color: rgba(255, 120, 100, 1.0);
 	font-weight: bold;
-	color: rgba(190, 190, 255, 1.0);
+	color: rgba(25, 25, 200, 1.0);
 	padding-right: 6px;
+}
+
+#custom-updates {
+  font-weight: bold;
+  padding-right: 6px;
+  color: rgba(20, 20, 200, 1.0);
+  background-color: rgba(255, 150, 20, 1.0);
 }
 
 #custom-weather {
