@@ -122,9 +122,9 @@ window#waybar.hidden {
 }
 
 #custom-nixosicon {
-	background-color: rgba(255, 120, 100, 1.0);
+	background-color: rgba(200, 200, 200, 1.0);
 	font-weight: bold;
-	color: rgba(25, 25, 200, 1.0);
+	color: rgba(10, 100, 200, 1.0);
 	padding-right: 6px;
 }
 
