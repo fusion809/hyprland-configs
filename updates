@@ -2,6 +2,6 @@
 cd $HOME/GitHub/mine/config/NixOS-configs
 sudo nix flake update
 diffLen=$(git diff flake.lock | wc -l)
-if [[ "$diffLen" > 0 ]]; then
+if [[ "$diffLen" > 100 ]]; then
 	echo "󰚰"
 fi

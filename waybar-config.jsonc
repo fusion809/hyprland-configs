@@ -10,7 +10,7 @@
     "modules-left": [
 	//"custom/archicon",
 	"custom/nixosicon",
-	"custom/updates",
+	//"custom/updates",
 	"hyprland/workspaces",
         "hyprland/mode",
 	"custom/weather",
