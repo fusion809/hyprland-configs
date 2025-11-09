@@ -45,6 +45,9 @@ if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 	else
 		NEXT_INDEX=$(( (LAST_INDEX + 1) % ${#WALLS[@]} ))
 	fi
+	if (( $NEXT_INDEX < 0 )); then
+		NEXT_INDEX=$(($NEXT_INDEX+$no))
+	fi
 	echo "$NEXT_INDEX" > "$STATE_FILE"
 elif `echo "$1" | grep "[rR]andom" &> /dev/null `; then
 	NEXT_INDEX=$(( RANDOM % no + 1 ))
@@ -52,7 +55,12 @@ elif `echo "$1" | grep "[rR]andom" &> /dev/null `; then
 elif `echo "$1" | grep "[rR]eload" &> /dev/null`; then
 	NEXT_INDEX=$(<"$STATE_FILE")
 elif `echo "$1" | grep "[0-9]" &> /dev/null`; then
-	NEXT_INDEX="$1"
+	if (( $1 < $no )); then
+		NEXT_INDEX="$1"
+	else
+		NEXT_INDEX=$(($1-$no))
+		zenity --info --text "You specified a number greater than the number of wallpapers available. So we are starting at the beginning again."
+	fi
 	echo "$NEXT_INDEX" > "$STATE_FILE"
 else
 	echo "Invalid argument given to wallpaper. Must be random, Random, systematic or Systematic!"
