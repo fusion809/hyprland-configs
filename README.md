@@ -108,9 +108,9 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>g</kbd>                                       | Launch gtop in Alacritty. |
 | <kbd>Win</kbd>+<kbd>h</kbd>                                       | Launch hyfetch in kitty. |
 | <kbd>Win</kbd>+<kbd>k</kbd>                                       | Open kitty terminal. |
-| <kbd>Win</kbd>+<kbd>n</kbd>                                       | Move tab focus to the right. |
+| <kbd>Win</kbd>+<kbd>n</kbd>                                       | Specify the number of wallpaper shown. | 
 | <kbd>Win</kbd>+<kbd>o</kbd>                                       | Open RuneScape. |
-| <kbd>Win</kbd>+<kbd>p</kbd>                                       | Move tab focus to the left. | 
+| <kbd>Win</kbd>+<kbd>p</kbd>                                       | Open file manager (Nautilus). |
 | <kbd>Win</kbd>+<kbd>q</kbd>                                       | Close current window. |
 | <kbd>Win</kbd>+<kbd>s</kbd>                                       | Change wallpaper to a randomly selected one. |
 | <kbd>Win</kbd>+<kbd>t</kbd>                                       | Enter tabbed mode.         |
@@ -152,7 +152,8 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>j</kbd>                      | Move window left (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>k</kbd>                      | Move window down (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>l</kbd>                      | Move window up (not including tabbed windows). |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Open file manager (Nautilus). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>n</kbd>                      | Move tab focus to the right. |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Move tab focus to the left. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>q</kbd>                      | Open Quora Chrome app |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                      | Enter window resizing mode. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>s</kbd>                      | Shutdown OS. |
