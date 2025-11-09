@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 WALL=$(cat /arch$HOME/.cache/wallpaper-name)
-sudo rm $WALL
+sudo rm "$WALL"
 $HOME/GitHub/mine/config/hyprland-configs/wallpaper reload
 echo $WALL >> /arch$HOME/.cache/deleted-wallpapers

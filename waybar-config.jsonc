@@ -21,7 +21,8 @@
 	"custom/wallpaper-rm",
 	"custom/wallpaper-previous",
 	"custom/wallpaper-random",
-	"custom/wallpaper-next"
+	"custom/wallpaper-next",
+	"custom/wallpaper-no-specify"
     ],
     "modules-center": [
         "hyprland/window"
@@ -137,6 +138,12 @@
 	    "tooltip": true,
 	    "tooltip-format": "Next wallpaper. Win+w achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper systematic next"
+    },
+    "custom/wallpaper-no-specify": {
+	    "format": "",
+	    "tooltip": true,
+	    "tooltip-format": "Enter the number of the next wallpaper you want to see.",
+	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper-no-specify"
     },
     "custom/bluetooth-connect": {
       "format": "",

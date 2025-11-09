@@ -157,7 +157,7 @@ window#waybar.hidden {
 	font-weight: bold;
 	font-size: 20px;
 }
-#custom-wallpaper-no, #custom-wallpaper-rm, #custom-wallpaper-previous, #custom-wallpaper-random, #custom-wallpaper-next, #custom-temperature {
+#custom-notification, #custom-wallpaper-no, #custom-wallpaper-rm, #custom-wallpaper-previous, #custom-wallpaper-random, #custom-wallpaper-next, #custom-temperature, #custom-wallpaper-no-specify {
   border-radius: 4px;
   margin: 6px 1px;
   padding: 3px 3px;
@@ -167,6 +167,10 @@ window#waybar.hidden {
 #custom-wallpaper-no {
 	  /*background-color: #ff66bb;*/
 	background-color: #00ffcc;
+}
+#custom-wallpaper-no-specify {
+	background-color: #114499;
+	color: #ffffff;
 }
 
 #custom-wallpaper-rm {

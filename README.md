@@ -22,6 +22,7 @@ The waybar has the following components:
 * A left arrow that, when clicked, changes your wallpaper to the previous one in your collection (keeping in mind, this is when you're using the systematic algorithm for the wallpaper script).
 * A shuffling arrow that, when clicked, changes your wallpaper to a randomly selected one.
 * A forward arrow that, when clicked, changes your wallpaper to the next systematically selected one. 
+* A collection of numbers that, when clicked, changes your wallpaper to one which a number you specify. 
 * The title of your currently focused window.
 * Used spaced on your root file system.
 * Internet download/upload speed on enp24s0 interface.
@@ -39,10 +40,16 @@ There is a script within this repository called `wallpaper` that will, using swa
 ## Syntax
 
 ```bash
-wallpaper <algorithm> [direction]
+wallpaper <algorithm/no> [direction]
 ```
 
-The algorithm argument is mandatory; the direction argument is optional. The algorithm argument decides which algorithm is used to decide the wallpaper set as your background. If you give it the argument `random` (first letter's case doesn't matter), you will get a randomly decided wallpaper out of those within those specified directories. If you give it the argument `systematic` (first letter's case also doesn't matter), wallpaper will systematically go through the wallpapers one by one. The direction argument can be "previous" or something else. If it is previous and the first argument is "systematic", this will lead to the previous wallpaper being shown. Otherwise the next wallpaper will be shown. This is also the default behaviour if direction is omitted.
+The algorithm/no argument is mandatory; the direction argument is optional. 
+
+The algorithm argument decides which algorithm is used to decide the wallpaper set as your background. If you give it the argument `random` (first letter's case doesn't matter), you will get a randomly decided wallpaper out of those within those specified directories. If you give it the argument `systematic` (first letter's case also doesn't matter), wallpaper will systematically go through the wallpapers one by one. 
+
+An alternative to the algorithm argument is the no argument which specifies the number of the wallpaper to be displayed. Keep in mind that list-wallpapers (which shows wallpapers with Vim line numbers) displays wallpapers with a number one higher than the number used by the wallpaper script (as wallpaper script numbers start at 0, whereas Vim starts at 1).  
+
+The direction argument, which is only applicable if the first argument is algorithm, can be "previous" or something else. If it is previous and the first argument is "systematic", this will lead to the previous wallpaper being shown. Otherwise the next wallpaper will be shown. This is also the default behaviour if direction is omitted.
 
 # Keyboard shortcuts
 | Keyboard combination                                              | Action                |
@@ -108,9 +115,9 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>g</kbd>                                       | Launch gtop in Alacritty. |
 | <kbd>Win</kbd>+<kbd>h</kbd>                                       | Launch hyfetch in kitty. |
 | <kbd>Win</kbd>+<kbd>k</kbd>                                       | Open kitty terminal. |
-| <kbd>Win</kbd>+<kbd>n</kbd>                                       | Move tab focus to the right. |
+| <kbd>Win</kbd>+<kbd>n</kbd>                                       | Specify the number of wallpaper shown. | 
 | <kbd>Win</kbd>+<kbd>o</kbd>                                       | Open RuneScape. |
-| <kbd>Win</kbd>+<kbd>p</kbd>                                       | Move tab focus to the left. | 
+| <kbd>Win</kbd>+<kbd>p</kbd>                                       | Open file manager (Nautilus). |
 | <kbd>Win</kbd>+<kbd>q</kbd>                                       | Close current window. |
 | <kbd>Win</kbd>+<kbd>s</kbd>                                       | Change wallpaper to a randomly selected one. |
 | <kbd>Win</kbd>+<kbd>t</kbd>                                       | Enter tabbed mode.         |
@@ -161,7 +168,7 @@ The algorithm argument is mandatory; the direction argument is optional. The alg
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>k</kbd>                      | Move window down (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>l</kbd>                      | Move window up (not including tabbed windows). |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>n</kbd>                      | Edit NixOS configuration files. |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Open file manager (Nautilus). |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                      | Move tab focus to the left. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>q</kbd>                      | Open Quora Chrome app |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                      | Enter window resizing mode. | 
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>s</kbd>                      | Shutdown OS. |
