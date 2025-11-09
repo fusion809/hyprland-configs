@@ -50,7 +50,7 @@ if `echo "$1" | grep "[sS]ystematic" &> /dev/null`; then
 	fi
 	echo "$NEXT_INDEX" > "$STATE_FILE"
 elif `echo "$1" | grep "[rR]andom" &> /dev/null `; then
-	NEXT_INDEX=$(( RANDOM % no + 1 ))
+	NEXT_INDEX=$(( RANDOM % no ))
 	echo "$NEXT_INDEX" > "$STATE_FILE"
 elif `echo "$1" | grep "[rR]eload" &> /dev/null`; then
 	NEXT_INDEX=$(<"$STATE_FILE")
