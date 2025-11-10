@@ -86,7 +86,7 @@
 	    "tooltip": true,
 	    "tooltip-format": "Number of available updates.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/update",
-	    "interval": 1
+	    "interval": 600
     },
     "custom/archicon": {
 	"format": "",
