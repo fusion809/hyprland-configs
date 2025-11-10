@@ -134,7 +134,7 @@
     "custom/wallpaper-random": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Random wallpaper. Win+Shift+s achieves the same thing.",
+	    "tooltip-format": "Random wallpaper. Win+s achieves the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper random"
     },
     "custom/wallpaper-next": {
