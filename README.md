@@ -10,7 +10,7 @@ To install these scripts, run the `install.sh` script. It merely gets the repo, 
 
 # Waybar
 The waybar has the following components:
-<!--* The Arch menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files.-->
+* The Arch menu which gives you options for opening up the AUR, ArchWiki, and editing  your Hyprland config files, as well as poweroff, restart, hibernate, logout and suspend buttons.
 * Workspaces.
 * Weather conditions, obtained by wttr.in. Beware that wttr.in can be quite unreliable at times.
 * Keyboard layout (just the two-letter initial though). 
@@ -29,7 +29,6 @@ The waybar has the following components:
 * CPU usage percentage.
 * RAM usage percentage.
 * Clock with AM/PM time with seconds, short day of the week name, day of the month/month of the year/year (short format). 
-* A menu that gives logout, shutdown, reboot, hibernate and suspend options.
 
 # Chrome notifications, how to prevent them take up a whole window
 I found that to avoid Google Chrome notifications taking up their own window and instead being displayed as a popup in the right-hand top corner of the screen, one needs to install GNOME but can then remove all the packages listed in `rmed-gnome-packages.txt`.
