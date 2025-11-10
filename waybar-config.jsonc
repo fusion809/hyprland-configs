@@ -37,11 +37,11 @@
     ],
 
    "custom/weather": {
-    "format": "{}°",
-    "tooltip": true,
-    "interval": 60,
-    "exec": "wttrbar",
-    "return-type": "json"
+	   "format": "{}°",
+	   "tooltip": true,
+	   "interval": 60,
+	   "exec": "wttrbar",
+	   "return-type": "json"
    },
    "custom/temperature": {
 	   "format": "{}",
@@ -146,7 +146,7 @@
     "custom/wallpaper-no-specify": {
 	    "format": "",
 	    "tooltip": true,
-	    "tooltip-format": "Enter the number of the next wallpaper you want to see.",
+	    "tooltip-format": "Enter the number of the next wallpaper you want to see. Win+n does the same thing.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/wallpaper-no-specify"
     },
     "custom/notification": {
