@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 if `which turbo &> /dev/null`; then
-	list=$(turbo -Py || sudo pacman -Syup | grep -v "core \|extra \|multilib \|testing \|multilib-testing \|extra-testing \|No.*packages\|AUR\|Synchronizing " | grep -vi "pacman" | grep -v "Update:" | grep -v "^$" | grep -v "json")
+	list=$(turbo -Py || sudo pacman -Syup)
+        list=$(echo $list | grep -v "ignored\|core \|extra \|multilib \|testing \|multilib-testing \|extra-testing \|No.*packages\|AUR\|Synchronizing " | grep -vi "pacman" | grep -v "Update:" | grep -v "^$" | grep -v "json" | grep -v "^\s*$")
 	no=$(echo $list | grep -v '^[[:space:]]*$' | wc -l)
 fi
 if [[ $no -gt 0 ]]; then
