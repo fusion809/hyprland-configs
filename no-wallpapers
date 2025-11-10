@@ -6,6 +6,9 @@ userls=$(find $HOME/.local/share/{backgrounds,wallpapers} -name "*.*g" -type f |
 userpi=$(find $HOME/Pictures/Wallpapers -name "*.*g" -type f | wc -l);
 user=$(($userpi+$userls))
 no=$(($root+$user-1))
+if (( $no < 0 )); then
+	no=0
+fi
 #curr=$(cat $HOME/.cache/swaybg-wallstate)
 # Define the two possible files
 f1="$HOME/.cache/swaybg-wallstate"
