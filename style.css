@@ -127,7 +127,7 @@ window#waybar.hidden {
 #custom-archicon, #custom-updates {
 	background-color: #4488cc;
 	color: #ffffff;
-	padding-right: 6px;
+	padding-right: 7px;
 }
 
 #custom-weather {
