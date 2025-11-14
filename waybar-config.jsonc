@@ -234,7 +234,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "blueman-manager"
+        "on-click": "pavucontrol"
     },
     /*"custom/media": {
         "format": "{icon} {text}",
