@@ -2,3 +2,5 @@
 *.pdf
 *.html
 runescape-bolt
+.RData
+.Rhistory
