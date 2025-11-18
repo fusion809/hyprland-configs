@@ -84,7 +84,7 @@
 	    "format": "{}",
 	    "exec": "$HOME/GitHub/mine/config/hyprland-configs/updates",
 	    "tooltip": true,
-	    "tooltip-format": "Number of available updates.",
+	    "tooltip-format": "Whether updates are available.",
 	    "on-click": "$HOME/GitHub/mine/config/hyprland-configs/update",
 	    "interval": 3600
     },
