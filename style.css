@@ -77,8 +77,8 @@ window#waybar.hidden {
 }
 
 #disk {
-  background-color: #a5f55f;
-  color: black;
+  background-color: #008118;
+  color: white;
   padding-right: 3px;
 }
 #tray {
