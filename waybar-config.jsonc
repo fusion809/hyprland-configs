@@ -11,7 +11,7 @@
 	"custom/nixosicon",
 	//"custom/updates",
 	"hyprland/workspaces",
-        "hyprland/mode",
+        //"hyprland/mode",
 	"custom/weather",
 	"custom/keyboard-layout",
 	"pulseaudio",
